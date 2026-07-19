@@ -1,0 +1,10 @@
+[
+  {
+    "type": "visual_observation",
+    "timestamp": "2026-07-19 11:56:19.480441",
+    "image": "images/test.jpg",
+    "status": "captured",
+    "description": "Image captured and awaiting analysis.",
+    "confidence": 1.0
+  }
+]

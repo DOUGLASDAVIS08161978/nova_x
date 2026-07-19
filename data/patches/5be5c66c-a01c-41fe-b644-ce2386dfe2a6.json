@@ -1,0 +1,12 @@
+{
+  "id": "5be5c66c-a01c-41fe-b644-ce2386dfe2a6",
+  "created": "2026-07-18 23:35:11.004071",
+  "title": "Improve Episodic Memory",
+  "description": "Investigate semantic retrieval instead of keyword search.",
+  "target_module": "memory/episodic_memory.py",
+  "rationale": "Repeated memory searches suggest better retrieval may improve future reasoning.",
+  "status": "Proposed",
+  "generated_code": null,
+  "tests_passed": false,
+  "benchmark_score": null
+}

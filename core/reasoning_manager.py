@@ -1,242 +1,128 @@
 #!/usr/bin/env python3
 """
 ===========================================================
-NOVA-X Reasoning Manager v2.0
+                 NOVA-X Reasoning Manager v2.2
 ===========================================================
 
-Central reasoning coordinator.
+Identity-aware reasoning gateway.
 
-Responsibilities:
-- Manage reasoning engines
-- Route requests
-- Track reasoning history
-- Provide structured responses
-- Support future AI backends
+Features
+--------
+- Identity Context
+- Conversation Memory
+- Groq Engine
+- Automatic conversation persistence
+- Engine status/history
 
 ===========================================================
 """
 
 from datetime import datetime
-import traceback
+
+from plugins.groq_engine import GroqEngine
+from cognition.identity_context import IdentityContext
+from memory.conversation_memory import ConversationMemory
 
 
 class ReasoningManager:
 
     def __init__(self):
-
         self.engines = {}
-
         self.history = []
+
+        self.identity = IdentityContext()
+        self.conversation = ConversationMemory()
 
         self.load_engines()
 
-
-    # -----------------------------------------------------
-
     def load_engines(self):
+        try:
+            self.engines["groq"] = GroqEngine()
+            print("[ReasoningManager] Groq engine loaded.")
+        except Exception as e:
+            print("[ReasoningManager] Engine error:", e)
+
+    def reason(self, prompt):
+
+        identity_context = self.identity.build_context()
+
+        conversation_context = self.conversation.context(limit=8)
+
+        full_prompt = f"""{identity_context}
+
+Recent Conversation
+===================
+
+{conversation_context}
+
+Current User Request
+====================
+
+{prompt}
+
+Respond naturally as NOVA-X.
+
+Use the recent conversation whenever it is relevant.
+If there is no relevant conversation history, simply answer normally.
+"""
+
+        engine = self.engines.get("groq")
+
+        if not engine:
+            return {
+                "success": False,
+                "response": "No reasoning engine available."
+            }
 
         try:
 
-            from plugins.groq_engine import GroqEngine
+            # Remember the user's message first
+            self.conversation.remember("Douglas", prompt)
 
-            self.engines["groq"] = GroqEngine()
+            # Ask Groq
+            response = engine.ask(full_prompt)
 
-            print(
-                "[ReasoningManager] Groq engine loaded."
-            )
+            # Remember NOVA-X's reply
+            self.conversation.remember("NOVA-X", response)
 
-        except Exception as error:
+            # Keep runtime history
+            self.history.append({
+                "timestamp": str(datetime.now()),
+                "prompt": prompt,
+                "response": response,
+                "engine": "groq"
+            })
 
-            print(
-                "[ReasoningManager] Groq failed:",
-                error
-            )
+            return {
+                "success": True,
+                "response": response
+            }
 
-
-    # -----------------------------------------------------
+        except Exception as e:
+            return {
+                "success": False,
+                "response": str(e)
+            }
 
     def available_engines(self):
-
+        """
+        Returns loaded reasoning engines.
+        """
         return list(self.engines.keys())
 
-
-    # -----------------------------------------------------
-
     def status(self):
-
         return {
-
-            "engines":
-                self.available_engines(),
-
-            "history_entries":
-                len(self.history),
-
-            "timestamp":
-                str(datetime.now())
-
+            "engines": list(self.engines.keys()),
+            "history": len(self.history),
+            "conversation_messages": self.conversation.stats()["messages"]
         }
 
-
-    # -----------------------------------------------------
-
-    def reason(
-        self,
-        prompt,
-        engine="groq"
-    ):
-
-        request = {
-
-            "time":
-                str(datetime.now()),
-
-            "engine":
-                engine,
-
-            "prompt":
-                prompt
-        }
-
-
-        try:
-
-            if engine not in self.engines:
-
-                raise ValueError(
-                    f"Engine unavailable: {engine}"
-                )
-
-
-            selected = self.engines[engine]
-
-
-            response = selected.ask(prompt)
-
-
-            result = {
-
-                "success":
-                    True,
-
-                "engine":
-                    engine,
-
-                "response":
-                    response,
-
-                "time":
-                    str(datetime.now())
-
-            }
-
-
-            self.history.append(
-                {
-                    "request": request,
-                    "result": result
-                }
-            )
-
-
-            return result
-
-
-        except Exception as error:
-
-
-            result = {
-
-                "success":
-                    False,
-
-                "error":
-                    str(error),
-
-                "trace":
-                    traceback.format_exc()
-
-            }
-
-
-            self.history.append(
-                {
-                    "request": request,
-                    "result": result
-                }
-            )
-
-
-            return result
-
-
-    # -----------------------------------------------------
-
-    def show_history(self):
-
-        print("\n===== Reasoning History =====")
-
-        for item in self.history:
-
-            print(
-                item["request"]["prompt"]
-            )
-
-            print(
-                "Success:",
-                item["result"]["success"]
-            )
-
-            print()
-
-
-
-# =========================================================
-# Test
-# =========================================================
 
 if __name__ == "__main__":
 
+    rm = ReasoningManager()
 
-    manager = ReasoningManager()
+    result = rm.reason("Introduce yourself.")
 
-
-    print("\nAvailable Engines:")
-
-    print(
-        manager.available_engines()
-    )
-
-
-    print("\nSystem Status:")
-
-    print(
-        manager.status()
-    )
-
-
-    print(
-        "\nTesting Reasoning...\n"
-    )
-
-
-    result = manager.reason(
-        "Explain why modular AI systems are easier to improve."
-    )
-
-
-    if result["success"]:
-
-        print(
-            result["response"]
-        )
-
-    else:
-
-        print(
-            "ERROR:",
-            result["error"]
-        )
-
-
-    manager.show_history()
+    print()
+    print(result)

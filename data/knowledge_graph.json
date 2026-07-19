@@ -1,0 +1,19 @@
+{
+  "entities": {
+    "Nikola Tesla": {
+      "type": "person",
+      "mentions": 1
+    },
+    "Alternating Current": {
+      "type": "technology",
+      "mentions": 1
+    }
+  },
+  "relationships": [
+    {
+      "source": "Nikola Tesla",
+      "relation": "developed",
+      "target": "Alternating Current"
+    }
+  ]
+}
