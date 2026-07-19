@@ -7,6 +7,22 @@
     "Alternating Current": {
       "type": "technology",
       "mentions": 1
+    },
+    "Observation:images/test.jpg": {
+      "type": "observation",
+      "mentions": 1
+    },
+    "electric bicycle": {
+      "type": "object",
+      "mentions": 1
+    },
+    "wheel": {
+      "type": "object",
+      "mentions": 1
+    },
+    "rear rack": {
+      "type": "object",
+      "mentions": 1
     }
   },
   "relationships": [
@@ -14,6 +30,21 @@
       "source": "Nikola Tesla",
       "relation": "developed",
       "target": "Alternating Current"
+    },
+    {
+      "source": "Observation:images/test.jpg",
+      "relation": "contains",
+      "target": "electric bicycle"
+    },
+    {
+      "source": "Observation:images/test.jpg",
+      "relation": "contains",
+      "target": "wheel"
+    },
+    {
+      "source": "Observation:images/test.jpg",
+      "relation": "contains",
+      "target": "rear rack"
     }
   ]
 }
