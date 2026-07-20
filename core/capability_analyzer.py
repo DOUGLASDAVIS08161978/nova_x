@@ -123,4 +123,3 @@ if __name__ == "__main__":
                 "Confidence     :",
                 f"{proposal['confidence']:.0%}"
             )
-

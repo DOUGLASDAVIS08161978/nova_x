@@ -145,4 +145,3 @@ if __name__ == "__main__":
     print("Next Mission:\n")
 
     print(next_job.name)
-

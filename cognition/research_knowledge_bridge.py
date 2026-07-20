@@ -153,4 +153,3 @@ wireless power transmission.
     print(
         bridge.kg.summary()
     )
-

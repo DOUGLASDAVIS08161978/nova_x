@@ -170,4 +170,3 @@ if __name__ == "__main__":
 
     print()
     print("Hypothesis log saved to hypothesis_log.json")
-

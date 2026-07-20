@@ -37,4 +37,3 @@ def capability_response():
     reporter.load()
 
     return reporter.self_description()
-

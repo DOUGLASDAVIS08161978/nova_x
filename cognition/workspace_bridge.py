@@ -172,4 +172,3 @@ if __name__ == "__main__":
         for event in workspace.get_events():
 
             print(event)
-

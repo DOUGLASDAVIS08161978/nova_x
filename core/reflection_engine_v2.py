@@ -157,4 +157,3 @@ if __name__ == "__main__":
     engine.print_report(report)
 
     print("Reflection saved to reflection_log.json")
-

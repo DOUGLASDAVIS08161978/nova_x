@@ -131,4 +131,3 @@ if __name__ == "__main__":
     print()
 
     scheduler.list_tasks()
-

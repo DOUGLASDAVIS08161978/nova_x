@@ -19,4 +19,3 @@ class PDFReader:
     def search(self, query):
         """Auto-generated stub."""
         raise NotImplementedError("Method not implemented yet.")
-
