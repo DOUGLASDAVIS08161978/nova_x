@@ -92,4 +92,3 @@ if __name__ == "__main__":
     for tool in registry.list_tools():
 
         print(" •", tool)
-

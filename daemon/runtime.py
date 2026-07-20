@@ -73,4 +73,3 @@ if __name__ == "__main__":
     runtime = NovaRuntime()
 
     runtime.summary()
-

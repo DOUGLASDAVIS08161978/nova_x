@@ -144,4 +144,3 @@ class LearningCycle:
 if __name__ == "__main__":
 
     LearningCycle().run()
-

@@ -95,4 +95,3 @@ if __name__ == "__main__":
     plan = planner.create_plan(goal)
 
     planner.print_plan(goal, plan)
-

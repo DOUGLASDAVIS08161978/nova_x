@@ -123,4 +123,3 @@ if __name__ == "__main__":
 
     print()
     print("Goal plan saved to goal_plans.json")
-

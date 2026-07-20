@@ -134,4 +134,3 @@ def initialize():
     loader.discover()
 
     loader.list_plugins()
-
