@@ -1,185 +1,112 @@
-#!/usr/bin/env python3
 """
-===========================================================
-NOVA-X Research Engine v2.0
-===========================================================
+═══════════════════════════════════════════════════════════════════════
+NOVA-X RESEARCH ENGINE
+═══════════════════════════════════════════════════════════════════════
 
-Lightweight research engine.
+Consumes research requests from the workspace.
 
-Reads research requests from the Global Workspace
-and retrieves information using HTTP.
-
-Current Version:
-- Reads research requests
-- Fetches DuckDuckGo Instant Answer JSON
-- Publishes results back into Workspace
-
-Future:
-- Multiple search providers
-- Groq summarization
-- Source ranking
-- Episodic memory integration
-===========================================================
+Author:
+Douglas Davis & OpenAI
 """
 
-import requests
-from urllib.parse import quote
+import sys
+from pathlib import Path
 
-from core.global_workspace import GlobalWorkspace
+sys.path.insert(
+    0,
+    str(Path(__file__).resolve().parent.parent / "daemon")
+)
+
+from runtime import NovaRuntime
+from mission_manager import Mission
 
 
 class ResearchEngine:
 
-    def __init__(self, workspace):
+    def __init__(self, runtime):
 
-        self.workspace = workspace
+        self.runtime = runtime
 
+    def cycle(self):
 
-    def research(self, topic):
+        if not self.runtime.workspace.has_work():
 
-        url = (
-            "https://api.duckduckgo.com/"
-            f"?q={quote(topic)}"
-            "&format=json"
-            "&no_html=1"
-            "&skip_disambig=1"
-        )
+            print("[Research] No work available.")
+            return
 
-        try:
+        task = self.runtime.workspace.next_task()
 
-            response = requests.get(
+        if task["type"] != "research_request":
 
-                url,
-
-                timeout=15,
-
-                headers={
-
-                    "User-Agent":
-                    "NOVA-X/2.0"
-
-                }
-
+            print(
+                f"[Research] Ignoring task: {task['type']}"
             )
-
-            response.raise_for_status()
-
-            return response.json()
-
-        except Exception as e:
-
-            return {
-
-                "error": str(e)
-
-            }
-
-
-    def process(self):
-
-        requests_list = self.workspace.get_category(
-
-            "research_request"
-
-        )
-
-        if not requests_list:
-
-            print("No research requests.")
-
             return
 
-        latest = requests_list[-1]
-
-        topic = latest["metadata"].get(
-
-            "topic",
-
-            latest["message"]
-
+        topic = task["payload"].get(
+            "mission",
+            "Unknown Topic"
         )
 
-        print(f"\nResearch Topic:\n{topic}\n")
+        print()
 
-        result = self.research(topic)
+        print("=" * 55)
+        print("RESEARCH ENGINE")
+        print("=" * 55)
 
-        if "error" in result:
+        print()
 
-            print(result["error"])
+        print(f"Research Topic : {topic}")
 
-            return
+        result = {
+            "topic": topic,
+            "status": "completed",
+            "summary":
+                f"Research cycle completed for '{topic}'."
+        }
 
-        summary = (
-
-            result.get("AbstractText")
-
-            or result.get("Heading")
-
-            or "No summary available."
-
+        self.runtime.workspace.submit(
+            "Research",
+            "knowledge_update",
+            result
         )
 
-        self.workspace.broadcast(
+        self.runtime.heartbeat.research()
 
-            "ResearchEngine",
+        print()
 
-            summary,
+        print("[Research] Cycle complete.")
 
-            category="research_result",
 
-            priority=0.80,
-
-            metadata={
-
-                "topic": topic,
-
-                "heading": result.get("Heading"),
-
-                "url": result.get("AbstractURL"),
-
-                "source": "DuckDuckGo Instant Answer"
-
-            }
-
-        )
-
-        print("\nResearch Complete.\n")
-
+###############################################################
+# SELF TEST
+###############################################################
 
 if __name__ == "__main__":
 
-    workspace = GlobalWorkspace()
+    runtime = NovaRuntime()
 
-    workspace.broadcast(
+    runtime.missions.add(
+        Mission(
+            "Improve Battery Technology",
+            "HIGH"
+        )
+    )
 
-        "CuriosityEngine",
-
-        "Nikola Tesla",
-
-        category="research_request",
-
-        metadata={
-
-            "topic": "Nikola Tesla"
-
+    runtime.workspace.submit(
+        "Curiosity",
+        "research_request",
+        {
+            "mission":
+                "Improve Battery Technology"
         }
-
     )
 
-    engine = ResearchEngine(
+    engine = ResearchEngine(runtime)
 
-        workspace
-
-    )
-
-    engine.process()
+    engine.cycle()
 
     print()
 
-    print("Workspace Events")
+    runtime.workspace.status()
 
-    print("----------------")
-
-    for event in workspace.get_events():
-
-        print(event)

@@ -1,0 +1,26 @@
+{
+    "daemon": {
+        "enabled": true,
+        "sleep_interval": 10,
+        "heartbeat_interval": 60,
+        "auto_start": true,
+        "debug": false
+    },
+    "research": {
+        "enabled": true,
+        "max_cycles": 5
+    },
+    "reflection": {
+        "enabled": true
+    },
+    "journal": {
+        "enabled": true
+    },
+    "missions": {
+        "enabled": true
+    },
+    "plugins": {
+        "enabled": true,
+        "directory": "plugins"
+    }
+}

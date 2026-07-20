@@ -1,0 +1,16 @@
+[
+    {
+        "created": "2026-07-19T19:47:10",
+        "title": "PDF Reader",
+        "description": "Design and implement a tool capable of extracting searchable text from PDF documents.",
+        "priority": "High",
+        "status": "Pending"
+    },
+    {
+        "created": "2026-07-19T19:47:10",
+        "title": "Image Analyzer",
+        "description": "Investigate adding image understanding capabilities.",
+        "priority": "Medium",
+        "status": "Pending"
+    }
+]

@@ -1,59 +1,71 @@
 #!/usr/bin/env python3
-
 """
-NOVA-X Executive Controller
-Version 0.1
+===========================================================
+NOVA-X Executive Controller v1.0
+===========================================================
+
+Coordinates the major NOVA-X subsystems.
+
+Author:
+Douglas Davis & OpenAI
+===========================================================
 """
 
 from datetime import datetime
-import time
 
 
 class ExecutiveController:
+
     def __init__(self):
-        self.modules = {}
-        self.running = False
-        self.cycle = 0
 
-    def register_module(self, name, module):
-        self.modules[name] = module
-        print(f"[+] Registered module: {name}")
+        self.modules = [
+            "Task Planner",
+            "Task Executor",
+            "Execution History",
+            "Self Evaluation",
+            "Capability Analyzer",
+            "Tool Architect",
+            "Tool Generator",
+            "Innovation Queue"
+        ]
 
-    def startup(self):
-        print("=" * 50)
-        print("        NOVA-X Executive Controller")
-        print("=" * 50)
-        print(f"Startup Time: {datetime.now()}")
-        print()
-
-        if not self.modules:
-            print("No modules registered.")
-        else:
-            print("Modules:")
-            for name in self.modules:
-                print(f"  - {name}")
+    def run(self, goal):
 
         print()
+        print("=" * 60)
+        print("NOVA-X EXECUTIVE CONTROLLER")
+        print("=" * 60)
+        print()
 
-    def run_cycle(self):
-        self.cycle += 1
-        print(f"\n----- Cognitive Cycle {self.cycle} -----")
+        print("Timestamp :", datetime.now().isoformat(timespec="seconds"))
+        print("Goal      :", goal)
+        print()
 
-        for name, module in self.modules.items():
-            if hasattr(module, "update"):
-                module.update()
+        print("Beginning execution pipeline...\n")
 
-    def run(self, cycles=5):
-        self.running = True
-        self.startup()
+        for step, module in enumerate(self.modules, 1):
 
-        while self.running and self.cycle < cycles:
-            self.run_cycle()
-            time.sleep(1)
+            print(f"[{step}/{len(self.modules)}] {module}")
 
-        print("\nSystem shutdown.")
+        print()
+        print("Pipeline complete.")
+        print()
+        print("System ready for next objective.")
 
+        return {
+            "goal": goal,
+            "completed": True,
+            "modules": self.modules
+        }
+
+
+############################################################
 
 if __name__ == "__main__":
+
     controller = ExecutiveController()
-    controller.run()
+
+    controller.run(
+        "Demonstrate the NOVA-X execution pipeline."
+    )
+

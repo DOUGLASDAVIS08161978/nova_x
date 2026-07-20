@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 ===========================================================
-NOVA-X Boot Kernel v1.0
+NOVA-X Boot Kernel v1.1
 ===========================================================
 
 Boots the NOVA-X cognitive architecture.
@@ -63,22 +63,69 @@ class NovaX:
 
         print("\nLoaded Reasoning Engines:")
 
-        for engine in self.reasoning.available_engines():
-            print("  •", engine)
+        try:
+            for engine in self.reasoning.available_engines():
+                print("  •", engine)
+        except Exception:
+            print("  (Unable to enumerate reasoning engines)")
 
-        print("\nSystem Ready.\n")
-
+        print("\nSystem Ready.")
 
     def ask(self, prompt):
 
         print("\nThinking...\n")
 
-        result = self.reasoning.reason(prompt)
+        try:
+            result = self.reasoning.reason(prompt)
 
-        if result["success"]:
-            print(result["response"])
-        else:
-            print(result["error"])
+            # Plain string response
+            if isinstance(result, str):
+                print(result)
+                return
+
+            # Dictionary response
+            if isinstance(result, dict):
+
+                if result.get("success", False):
+                    print(
+                        result.get(
+                            "response",
+                            result.get(
+                                "text",
+                                result.get(
+                                    "message",
+                                    str(result)
+                                )
+                            )
+                        )
+                    )
+                    return
+
+                if "response" in result:
+                    print(result["response"])
+                    return
+
+                if "text" in result:
+                    print(result["text"])
+                    return
+
+                if "message" in result:
+                    print(result["message"])
+                    return
+
+                if "error" in result:
+                    print("ERROR:", result["error"])
+                    return
+
+                print("Unexpected result:")
+                print(result)
+                return
+
+            print(result)
+
+        except Exception as e:
+            print("\nRuntime Error:")
+            print(type(e).__name__, "-", e)
 
 
 def main():
@@ -91,11 +138,11 @@ def main():
 
             prompt = input("\nNOVA-X > ")
 
-            if prompt.lower() in [
+            if prompt.lower() in (
                 "quit",
                 "exit",
                 "bye"
-            ]:
+            ):
                 print("\nGoodbye.")
                 break
 
@@ -105,7 +152,6 @@ def main():
             nova.ask(prompt)
 
         except KeyboardInterrupt:
-
             print("\nInterrupted.")
             break
 

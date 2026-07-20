@@ -1,122 +1,68 @@
-#!/usr/bin/env python3
 """
-===========================================================
-NOVA-X Curiosity Engine v1.0
-===========================================================
+═══════════════════════════════════════════════════════════════════════
+NOVA-X CURIOSITY ENGINE
+═══════════════════════════════════════════════════════════════════════
 
-Generates research topics based on:
-- Active goals
-- Workspace activity
-- Random exploration
+Generates research tasks from active missions.
 
-This module DOES NOT perform research.
-It decides what should be researched next.
-===========================================================
+Author:
+Douglas Davis & OpenAI
 """
-
-import random
-
-from core.global_workspace import GlobalWorkspace
-
-
-DEFAULT_TOPICS = [
-
-    "Artificial Intelligence",
-
-    "Memory Systems",
-
-    "Planning Algorithms",
-
-    "Distributed Systems",
-
-    "Knowledge Graphs",
-
-    "Software Architecture",
-
-    "Machine Learning",
-
-    "Robotics",
-
-    "Cybersecurity",
-
-    "Mathematics"
-
-]
-
 
 class CuriosityEngine:
 
-    def __init__(self, workspace):
+    def __init__(self, runtime):
 
-        self.workspace = workspace
+        self.runtime = runtime
 
+    def cycle(self):
 
-    def choose_topic(self):
+        mission = self.runtime.missions.next_mission()
 
-        goals = self.workspace.get_category("goal")
+        if mission is None:
 
-        if goals:
+            print("[Curiosity] No active missions.")
+            return
 
-            goal = random.choice(goals)
+        task = {
+            "mission": mission.name,
+            "priority": mission.priority
+        }
 
-            return f"Research goal: {goal['message']}"
-
-        return random.choice(DEFAULT_TOPICS)
-
-
-    def generate(self):
-
-        topic = self.choose_topic()
-
-        self.workspace.broadcast(
-
-            "CuriosityEngine",
-
-            topic,
-
-            category="research_request",
-
-            priority=0.80,
-
-            metadata={
-
-                "topic": topic,
-
-                "origin": "curiosity"
-
-            }
-
+        self.runtime.workspace.submit(
+            "Curiosity",
+            "research_request",
+            task
         )
 
-        return topic
+        print(
+            f"[Curiosity] Proposed research for '{mission.name}'"
+        )
 
+
+###############################################################
+# SELF TEST
+###############################################################
 
 if __name__ == "__main__":
 
-    workspace = GlobalWorkspace()
+    import sys
+    from pathlib import Path
 
-    workspace.broadcast(
+    sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "daemon"))
 
-        "Planner",
+    from runtime import NovaRuntime
+    from mission_manager import Mission
 
-        "Improve memory retrieval",
+    runtime = NovaRuntime()
 
-        category="goal"
-
+    runtime.missions.add(
+        Mission("Improve Battery Technology", "HIGH")
     )
 
-    engine = CuriosityEngine(
+    engine = CuriosityEngine(runtime)
 
-        workspace
+    engine.cycle()
 
-    )
+    runtime.workspace.status()
 
-    topic = engine.generate()
-
-    print()
-
-    print("Curiosity Selected")
-
-    print("------------------")
-
-    print(topic)

@@ -1,9 +1,9 @@
 """
 ═══════════════════════════════════════════════════════════════════════
-NOVA-X REFLECTION ENGINE
+NOVA-X KNOWLEDGE STORE
 ═══════════════════════════════════════════════════════════════════════
 
-Reflects on newly acquired knowledge.
+Stores knowledge updates produced by the Research Engine.
 
 Author:
 Douglas Davis & OpenAI
@@ -20,71 +20,58 @@ sys.path.insert(
 from runtime import NovaRuntime
 
 
-class ReflectionEngine:
+class KnowledgeStore:
 
     def __init__(self, runtime):
 
         self.runtime = runtime
 
+        self.memory = []
+
     def cycle(self):
 
         if not self.runtime.workspace.has_work():
 
-            print("[Reflection] No work.")
+            print("[Knowledge] No work.")
             return
 
         task = self.runtime.workspace.next_task()
 
-        if task["type"] != "reflection_request":
+        if task["type"] != "knowledge_update":
 
             print(
-                f"[Reflection] Ignoring {task['type']}"
+                f"[Knowledge] Ignoring {task['type']}"
             )
+
             return
 
-        knowledge = task["payload"]
+        self.memory.append(task["payload"])
 
         print()
+
         print("=" * 55)
-        print("REFLECTION ENGINE")
+        print("KNOWLEDGE STORE")
         print("=" * 55)
+
         print()
 
         print(
-            f"Topic : {knowledge.get('topic')}"
+            f"Stored: {task['payload']['topic']}"
         )
 
-        summary = knowledge.get(
-            "summary",
-            ""
+        print(
+            f"Knowledge Entries: {len(self.memory)}"
         )
-
-        insight = (
-            f"Reflection completed for "
-            f"{knowledge.get('topic')}."
-        )
-
-        print(f"Summary : {summary}")
-        print(f"Insight : {insight}")
-
-        self.runtime.heartbeat.reflection()
 
         self.runtime.workspace.submit(
 
-            "Reflection",
+            "Knowledge",
 
-            "journal_entry",
+            "reflection_request",
 
-            {
-                "topic": knowledge.get("topic"),
-                "summary": summary,
-                "insight": insight
-            }
+            task["payload"]
 
         )
-
-        print()
-        print("[Reflection] Cycle complete.")
 
 
 ###############################################################
@@ -97,20 +84,20 @@ if __name__ == "__main__":
 
     runtime.workspace.submit(
 
-        "Knowledge",
+        "Research",
 
-        "reflection_request",
+        "knowledge_update",
 
         {
             "topic":"Improve Battery Technology",
-            "summary":"Research completed successfully."
+            "summary":"Research completed."
         }
 
     )
 
-    engine = ReflectionEngine(runtime)
+    ks = KnowledgeStore(runtime)
 
-    engine.cycle()
+    ks.cycle()
 
     print()
 

@@ -2,7 +2,7 @@
   "entities": {
     "Nikola Tesla": {
       "type": "person",
-      "mentions": 1
+      "mentions": 2
     },
     "Alternating Current": {
       "type": "technology",
@@ -22,6 +22,50 @@
     },
     "rear rack": {
       "type": "object",
+      "mentions": 1
+    },
+    "Research:Tesla": {
+      "type": "research",
+      "mentions": 1
+    },
+    "Nikola": {
+      "type": "concept",
+      "mentions": 2
+    },
+    "Tesla": {
+      "type": "concept",
+      "mentions": 2
+    },
+    "Tower": {
+      "type": "concept",
+      "mentions": 2
+    },
+    "Wardenclyffe": {
+      "type": "concept",
+      "mentions": 2
+    },
+    "Research:Nikola Tesla": {
+      "type": "research",
+      "mentions": 1
+    },
+    "Coil": {
+      "type": "concept",
+      "mentions": 1
+    },
+    "Tesla Coil": {
+      "type": "concept",
+      "mentions": 1
+    },
+    "Wardenclyffe Tower": {
+      "type": "concept",
+      "mentions": 1
+    },
+    "Research:Alternating Current": {
+      "type": "research",
+      "mentions": 1
+    },
+    "Alternating": {
+      "type": "concept",
       "mentions": 1
     }
   },
@@ -45,6 +89,71 @@
       "source": "Observation:images/test.jpg",
       "relation": "contains",
       "target": "rear rack"
+    },
+    {
+      "source": "Research:Tesla",
+      "relation": "mentions",
+      "target": "Nikola"
+    },
+    {
+      "source": "Research:Tesla",
+      "relation": "mentions",
+      "target": "Tesla"
+    },
+    {
+      "source": "Research:Tesla",
+      "relation": "mentions",
+      "target": "Tower"
+    },
+    {
+      "source": "Research:Tesla",
+      "relation": "mentions",
+      "target": "Wardenclyffe"
+    },
+    {
+      "source": "Research:Nikola Tesla",
+      "relation": "mentions",
+      "target": "Coil"
+    },
+    {
+      "source": "Research:Nikola Tesla",
+      "relation": "mentions",
+      "target": "Nikola"
+    },
+    {
+      "source": "Research:Nikola Tesla",
+      "relation": "mentions",
+      "target": "Nikola Tesla"
+    },
+    {
+      "source": "Research:Nikola Tesla",
+      "relation": "mentions",
+      "target": "Tesla"
+    },
+    {
+      "source": "Research:Nikola Tesla",
+      "relation": "mentions",
+      "target": "Tesla Coil"
+    },
+    {
+      "source": "Research:Nikola Tesla",
+      "relation": "mentions",
+      "target": "Tower"
+    },
+    {
+      "source": "Research:Nikola Tesla",
+      "relation": "mentions",
+      "target": "Wardenclyffe"
+    },
+    {
+      "source": "Research:Nikola Tesla",
+      "relation": "mentions",
+      "target": "Wardenclyffe Tower"
+    },
+    {
+      "source": "Research:Alternating Current",
+      "relation": "mentions",
+      "target": "Alternating"
     }
   ]
 }
