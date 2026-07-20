@@ -1,0 +1,36 @@
+[
+    {
+        "timestamp": "2026-07-20T07:54:13",
+        "problem": "Battery will not begin charging immediately.",
+        "hypotheses": [
+            {
+                "description": "Battery temperature is too high.",
+                "confidence": 0.7,
+                "evidence": [
+                    "Battery recently used.",
+                    "Battery feels warm."
+                ],
+                "test": "Allow battery to cool for 30 minutes.",
+                "normalized_confidence": 0.7
+            },
+            {
+                "description": "Battery Management System balancing cells.",
+                "confidence": 0.2,
+                "evidence": [
+                    "Charger indicates standby."
+                ],
+                "test": "Leave charger connected for one hour.",
+                "normalized_confidence": 0.2
+            },
+            {
+                "description": "Faulty charger.",
+                "confidence": 0.1,
+                "evidence": [
+                    "No charging LEDs."
+                ],
+                "test": "Test with another charger.",
+                "normalized_confidence": 0.1
+            }
+        ]
+    }
+]

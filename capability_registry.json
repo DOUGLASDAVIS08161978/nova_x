@@ -1,0 +1,47 @@
+{
+    "Planning": {
+        "provider": "GoalPlanner",
+        "description": "High-level goal planning",
+        "enabled": true
+    },
+    "Reasoning": {
+        "provider": "ReasoningManager",
+        "description": "Coordinates reasoning engines",
+        "enabled": true
+    },
+    "Reflection": {
+        "provider": "ReflectionEngineV2",
+        "description": "Post-execution reflection",
+        "enabled": true
+    },
+    "Hypothesis Generation": {
+        "provider": "HypothesisEngine",
+        "description": "Generates competing explanations",
+        "enabled": true
+    },
+    "Repository Intelligence": {
+        "provider": "RepositoryIntelligence",
+        "description": "Analyzes repository architecture",
+        "enabled": true
+    },
+    "Memory": {
+        "provider": "WorkingMemory",
+        "description": "Stores short-term context",
+        "enabled": true
+    },
+    "Knowledge Graph": {
+        "provider": "KnowledgeGraph",
+        "description": "Persistent structured knowledge",
+        "enabled": true
+    },
+    "Vision": {
+        "provider": "VisionAnalyzer",
+        "description": "Analyzes images",
+        "enabled": true
+    },
+    "Research": {
+        "provider": "ResearchEngine",
+        "description": "Searches external knowledge sources",
+        "enabled": true
+    }
+}
