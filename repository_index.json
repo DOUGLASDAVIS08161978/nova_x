@@ -1,0 +1,962 @@
+{
+    "timestamp": "2026-07-20T08:33:19",
+    "files": [
+        {
+            "file": "main.py",
+            "classes": [
+                "NovaX"
+            ],
+            "functions": [
+                "main",
+                "__init__",
+                "ask"
+            ]
+        },
+        {
+            "file": "core/executive_controller.py",
+            "classes": [
+                "ExecutiveController"
+            ],
+            "functions": [
+                "__init__",
+                "run"
+            ]
+        },
+        {
+            "file": "core/global_workspace.py",
+            "classes": [
+                "GlobalWorkspace"
+            ],
+            "functions": [
+                "__init__",
+                "broadcast",
+                "get_events",
+                "get_category",
+                "get_high_priority",
+                "recent",
+                "clear",
+                "stats",
+                "update"
+            ]
+        },
+        {
+            "file": "core/plugin_manager.py",
+            "classes": [
+                "PluginManager"
+            ],
+            "functions": [
+                "__init__",
+                "discover",
+                "list_plugins",
+                "update"
+            ]
+        },
+        {
+            "file": "core/reasoning_manager.py",
+            "classes": [
+                "ReasoningManager"
+            ],
+            "functions": [
+                "__init__",
+                "load_engines",
+                "reason",
+                "available_engines",
+                "status"
+            ]
+        },
+        {
+            "file": "core/__init__.py",
+            "classes": [],
+            "functions": []
+        },
+        {
+            "file": "core/cognitive_orchestrator.py",
+            "classes": [
+                "CognitiveOrchestrator"
+            ],
+            "functions": [
+                "__init__",
+                "observe",
+                "reason",
+                "improve",
+                "remember",
+                "run_cycle",
+                "run"
+            ]
+        },
+        {
+            "file": "core/event_bus.py",
+            "classes": [
+                "EventBus"
+            ],
+            "functions": [
+                "__init__",
+                "subscribe",
+                "publish",
+                "recent",
+                "status",
+                "memory_listener"
+            ]
+        },
+        {
+            "file": "core/reasoning_manager_backup.py",
+            "classes": [
+                "ReasoningManager"
+            ],
+            "functions": [
+                "__init__",
+                "load_engines",
+                "reason",
+                "status"
+            ]
+        },
+        {
+            "file": "core/code_executor.py",
+            "classes": [
+                "CodeExecutor"
+            ],
+            "functions": [
+                "__init__",
+                "execute_python"
+            ]
+        },
+        {
+            "file": "core/experiment_engine.py",
+            "classes": [
+                "ExperimentEngine"
+            ],
+            "functions": [
+                "__init__",
+                "run_experiment"
+            ]
+        },
+        {
+            "file": "core/android_agent.py",
+            "classes": [
+                "AndroidAgent"
+            ],
+            "functions": [
+                "__init__",
+                "_run",
+                "open_url",
+                "share_text",
+                "open_file",
+                "run_command"
+            ]
+        },
+        {
+            "file": "core/tool_registry.py",
+            "classes": [
+                "ToolRegistry",
+                "Dummy"
+            ],
+            "functions": [
+                "__init__",
+                "register",
+                "get",
+                "has",
+                "list_tools",
+                "describe"
+            ]
+        },
+        {
+            "file": "core/task_planner.py",
+            "classes": [
+                "TaskPlanner",
+                "Dummy"
+            ],
+            "functions": [
+                "__init__",
+                "create_plan"
+            ]
+        },
+        {
+            "file": "core/task_executor.py",
+            "classes": [
+                "DummyTool",
+                "TaskExecutor"
+            ],
+            "functions": [
+                "__init__",
+                "run",
+                "__init__",
+                "_select_tool",
+                "execute"
+            ]
+        },
+        {
+            "file": "core/execution_history.py",
+            "classes": [
+                "ExecutionHistory"
+            ],
+            "functions": [
+                "__init__",
+                "_load",
+                "_save",
+                "record",
+                "summary"
+            ]
+        },
+        {
+            "file": "core/self_evaluation.py",
+            "classes": [
+                "SelfEvaluation"
+            ],
+            "functions": [
+                "evaluate"
+            ]
+        },
+        {
+            "file": "core/capability_analyzer.py",
+            "classes": [
+                "CapabilityAnalyzer",
+                "Dummy"
+            ],
+            "functions": [
+                "__init__",
+                "analyze",
+                "propose_tool"
+            ]
+        },
+        {
+            "file": "core/tool_architect.py",
+            "classes": [
+                "ToolArchitect"
+            ],
+            "functions": [
+                "design",
+                "_suggest_methods",
+                "_dependencies",
+                "_tests"
+            ]
+        },
+        {
+            "file": "core/tool_generator.py",
+            "classes": [
+                "ToolGenerator"
+            ],
+            "functions": [
+                "__init__",
+                "generate"
+            ]
+        },
+        {
+            "file": "core/innovation_queue.py",
+            "classes": [
+                "InnovationQueue"
+            ],
+            "functions": [
+                "__init__",
+                "_load",
+                "_save",
+                "add",
+                "list_items",
+                "show"
+            ]
+        },
+        {
+            "file": "core/pipeline_context.py",
+            "classes": [
+                "PipelineContext"
+            ],
+            "functions": [
+                "__init__",
+                "set_plan",
+                "add_execution",
+                "add_gap",
+                "add_generated_tool",
+                "add_innovation",
+                "set_score",
+                "summary"
+            ]
+        },
+        {
+            "file": "core/module_registry.py",
+            "classes": [
+                "ModuleRegistry"
+            ],
+            "functions": [
+                "__init__",
+                "register",
+                "enable",
+                "disable",
+                "enabled_modules",
+                "all_modules",
+                "summary"
+            ]
+        },
+        {
+            "file": "core/execution_pipeline.py",
+            "classes": [
+                "ExecutionPipeline"
+            ],
+            "functions": [
+                "__init__",
+                "execute"
+            ]
+        },
+        {
+            "file": "core/module_base.py",
+            "classes": [
+                "ModuleBase",
+                "DemoModule"
+            ],
+            "functions": [
+                "__init__",
+                "run",
+                "info",
+                "__init__",
+                "run"
+            ]
+        },
+        {
+            "file": "core/action_planner.py",
+            "classes": [
+                "ActionPlanner"
+            ],
+            "functions": [
+                "__init__",
+                "create_plan",
+                "print_plan"
+            ]
+        },
+        {
+            "file": "core/rate_limit_manager.py",
+            "classes": [
+                "RateLimitManager"
+            ],
+            "functions": [
+                "__init__",
+                "token_settings",
+                "execute",
+                "fake_api"
+            ]
+        },
+        {
+            "file": "core/reflection_engine_v2.py",
+            "classes": [
+                "ReflectionEngine"
+            ],
+            "functions": [
+                "__init__",
+                "reflect",
+                "save",
+                "print_report"
+            ]
+        },
+        {
+            "file": "core/hypothesis_engine.py",
+            "classes": [
+                "HypothesisEngine"
+            ],
+            "functions": [
+                "__init__",
+                "evaluate",
+                "save",
+                "print_report"
+            ]
+        },
+        {
+            "file": "core/goal_planner.py",
+            "classes": [
+                "GoalPlanner"
+            ],
+            "functions": [
+                "__init__",
+                "create_plan",
+                "save_plan",
+                "print_plan"
+            ]
+        },
+        {
+            "file": "core/repository_intelligence.py",
+            "classes": [
+                "RepositoryIntelligence"
+            ],
+            "functions": [
+                "__init__",
+                "scan",
+                "analyze",
+                "save",
+                "print_report"
+            ]
+        },
+        {
+            "file": "cognition/identity_core.py",
+            "classes": [
+                "IdentityCore"
+            ],
+            "functions": [
+                "__init__",
+                "add_belief",
+                "update_preference",
+                "reflect",
+                "self_summary",
+                "update"
+            ]
+        },
+        {
+            "file": "cognition/__init__.py",
+            "classes": [],
+            "functions": []
+        },
+        {
+            "file": "cognition/self_improvement.py",
+            "classes": [
+                "SelfImprovementPlanner"
+            ],
+            "functions": [
+                "__init__",
+                "propose",
+                "list_proposals",
+                "summary"
+            ]
+        },
+        {
+            "file": "cognition/cognitive_cycle.py",
+            "classes": [
+                "CognitiveCycle"
+            ],
+            "functions": [
+                "__init__",
+                "observe",
+                "reflect",
+                "plan",
+                "remember",
+                "cycle",
+                "run"
+            ]
+        },
+        {
+            "file": "cognition/patch_generator.py",
+            "classes": [
+                "PatchGenerator"
+            ],
+            "functions": [
+                "__init__",
+                "create_patch",
+                "list_patches"
+            ]
+        },
+        {
+            "file": "cognition/goal_manager.py",
+            "classes": [
+                "GoalManager"
+            ],
+            "functions": [
+                "__init__",
+                "load",
+                "save",
+                "create_goal",
+                "update_progress",
+                "active_goals",
+                "summary"
+            ]
+        },
+        {
+            "file": "cognition/consistency_checker.py",
+            "classes": [
+                "ConsistencyChecker"
+            ],
+            "functions": [
+                "__init__",
+                "check",
+                "publish_results"
+            ]
+        },
+        {
+            "file": "cognition/decision_engine.py",
+            "classes": [
+                "DecisionEngine"
+            ],
+            "functions": [
+                "__init__",
+                "decide",
+                "execute"
+            ]
+        },
+        {
+            "file": "cognition/planner.py",
+            "classes": [
+                "Planner"
+            ],
+            "functions": [
+                "__init__",
+                "create_plan",
+                "publish_plan"
+            ]
+        },
+        {
+            "file": "cognition/executor.py",
+            "classes": [
+                "Executor"
+            ],
+            "functions": [
+                "__init__",
+                "execute"
+            ]
+        },
+        {
+            "file": "cognition/curiosity_engine.py",
+            "classes": [
+                "CuriosityEngine"
+            ],
+            "functions": [
+                "__init__",
+                "cycle"
+            ]
+        },
+        {
+            "file": "cognition/research_engine.py",
+            "classes": [
+                "ResearchEngine"
+            ],
+            "functions": [
+                "__init__",
+                "cycle"
+            ]
+        },
+        {
+            "file": "cognition/reflection_engine.py",
+            "classes": [
+                "ReflectionEngine"
+            ],
+            "functions": [
+                "__init__",
+                "cycle"
+            ]
+        },
+        {
+            "file": "cognition/identity_context.py",
+            "classes": [
+                "IdentityContext"
+            ],
+            "functions": [
+                "__init__",
+                "get_profile",
+                "build_context"
+            ]
+        },
+        {
+            "file": "cognition/observation_engine.py",
+            "classes": [
+                "ObservationEngine"
+            ],
+            "functions": [
+                "__init__",
+                "load",
+                "save",
+                "observe_image",
+                "recent",
+                "latest",
+                "count",
+                "stats"
+            ]
+        },
+        {
+            "file": "cognition/workspace_bridge.py",
+            "classes": [
+                "WorkspaceBridge"
+            ],
+            "functions": [
+                "__init__",
+                "publish_observation",
+                "status"
+            ]
+        },
+        {
+            "file": "cognition/vision_analyzer.py",
+            "classes": [
+                "VisionAnalyzer"
+            ],
+            "functions": [
+                "__init__",
+                "analyze",
+                "latest",
+                "stats"
+            ]
+        },
+        {
+            "file": "cognition/vision_knowledge_bridge.py",
+            "classes": [
+                "VisionKnowledgeBridge"
+            ],
+            "functions": [
+                "__init__",
+                "import_analysis",
+                "status"
+            ]
+        },
+        {
+            "file": "cognition/knowledge_query_engine.py",
+            "classes": [
+                "KnowledgeQueryEngine"
+            ],
+            "functions": [
+                "__init__",
+                "find_entity",
+                "search_entities",
+                "relationships_for",
+                "stats"
+            ]
+        },
+        {
+            "file": "cognition/knowledge_context.py",
+            "classes": [
+                "KnowledgeContext"
+            ],
+            "functions": [
+                "__init__",
+                "build_context"
+            ]
+        },
+        {
+            "file": "cognition/research_knowledge_bridge.py",
+            "classes": [
+                "ResearchKnowledgeBridge"
+            ],
+            "functions": [
+                "__init__",
+                "extract_entities",
+                "import_research"
+            ]
+        },
+        {
+            "file": "cognition/learning_cycle.py",
+            "classes": [
+                "LearningCycle"
+            ],
+            "functions": [
+                "__init__",
+                "run"
+            ]
+        },
+        {
+            "file": "cognition/research_provider.py",
+            "classes": [
+                "DuckDuckGoProvider",
+                "WikipediaProvider",
+                "ResearchProviderManager"
+            ],
+            "functions": [
+                "search",
+                "search",
+                "__init__",
+                "search"
+            ]
+        },
+        {
+            "file": "cognition/knowledge_store.py",
+            "classes": [
+                "KnowledgeStore"
+            ],
+            "functions": [
+                "__init__",
+                "cycle"
+            ]
+        },
+        {
+            "file": "memory/working_memory.py",
+            "classes": [
+                "WorkingMemory"
+            ],
+            "functions": [
+                "__init__",
+                "add",
+                "recall",
+                "clear",
+                "update"
+            ]
+        },
+        {
+            "file": "memory/__init__.py",
+            "classes": [],
+            "functions": []
+        },
+        {
+            "file": "memory/episodic_memory.py",
+            "classes": [
+                "EpisodicMemory"
+            ],
+            "functions": [
+                "__init__",
+                "load",
+                "save",
+                "remember",
+                "recent",
+                "search",
+                "summary"
+            ]
+        },
+        {
+            "file": "memory/knowledge_graph.py",
+            "classes": [
+                "KnowledgeGraph"
+            ],
+            "functions": [
+                "__init__",
+                "load",
+                "save",
+                "add_entity",
+                "add_relationship",
+                "summary"
+            ]
+        },
+        {
+            "file": "memory/conversation_memory.py",
+            "classes": [
+                "ConversationMemory"
+            ],
+            "functions": [
+                "__init__",
+                "load",
+                "save",
+                "remember",
+                "recent",
+                "context",
+                "clear",
+                "stats"
+            ]
+        },
+        {
+            "file": "plugins/groq_engine.py",
+            "classes": [
+                "GroqEngine"
+            ],
+            "functions": [
+                "__init__",
+                "ask"
+            ]
+        },
+        {
+            "file": "plugins/__init__.py",
+            "classes": [],
+            "functions": []
+        },
+        {
+            "file": "plugins/demo_plugin.py",
+            "classes": [],
+            "functions": [
+                "initialize"
+            ]
+        },
+        {
+            "file": "sensors/sensor_manager.py",
+            "classes": [
+                "SensorManager"
+            ],
+            "functions": [
+                "__init__",
+                "register_sensor",
+                "enable_sensor",
+                "disable_sensor",
+                "publish_event",
+                "status"
+            ]
+        },
+        {
+            "file": "sensors/camera_module.py",
+            "classes": [
+                "CameraModule"
+            ],
+            "functions": [
+                "__init__",
+                "capture"
+            ]
+        },
+        {
+            "file": "sensors/camera_module_backup.py",
+            "classes": [
+                "CameraModule"
+            ],
+            "functions": [
+                "__init__",
+                "capture"
+            ]
+        },
+        {
+            "file": "daemon/__init__.py",
+            "classes": [],
+            "functions": []
+        },
+        {
+            "file": "daemon/config.py",
+            "classes": [
+                "ConfigManager"
+            ],
+            "functions": [
+                "__init__",
+                "load",
+                "save",
+                "get",
+                "set"
+            ]
+        },
+        {
+            "file": "daemon/event_bus.py",
+            "classes": [
+                "Event",
+                "EventBus"
+            ],
+            "functions": [
+                "__init__",
+                "__str__",
+                "__init__",
+                "subscribe",
+                "unsubscribe",
+                "publish",
+                "listener_count",
+                "event_count",
+                "clear_history",
+                "dump_history",
+                "curiosity",
+                "journal"
+            ]
+        },
+        {
+            "file": "daemon/scheduler.py",
+            "classes": [
+                "ScheduledTask",
+                "Scheduler"
+            ],
+            "functions": [
+                "__init__",
+                "ready",
+                "run",
+                "__init__",
+                "add_task",
+                "tick",
+                "task_count",
+                "list_tasks",
+                "curiosity",
+                "reflection"
+            ]
+        },
+        {
+            "file": "daemon/service_manager.py",
+            "classes": [
+                "Service",
+                "ServiceManager"
+            ],
+            "functions": [
+                "__init__",
+                "start",
+                "stop",
+                "heartbeat",
+                "__init__",
+                "register",
+                "start_all",
+                "stop_all",
+                "heartbeat",
+                "status"
+            ]
+        },
+        {
+            "file": "daemon/heartbeat.py",
+            "classes": [
+                "Heartbeat"
+            ],
+            "functions": [
+                "__init__",
+                "tick",
+                "event",
+                "research",
+                "reflection",
+                "uptime",
+                "report"
+            ]
+        },
+        {
+            "file": "daemon/mission_manager.py",
+            "classes": [
+                "Mission",
+                "MissionManager"
+            ],
+            "functions": [
+                "__init__",
+                "advance",
+                "add_questions",
+                "answer_question",
+                "status",
+                "__init__",
+                "add",
+                "list",
+                "active",
+                "next_mission"
+            ]
+        },
+        {
+            "file": "daemon/plugin_loader.py",
+            "classes": [
+                "PluginLoader"
+            ],
+            "functions": [
+                "__init__",
+                "discover",
+                "list_plugins"
+            ]
+        },
+        {
+            "file": "daemon/workspace_coordinator.py",
+            "classes": [
+                "WorkspaceCoordinator"
+            ],
+            "functions": [
+                "__init__",
+                "submit",
+                "has_work",
+                "next_task",
+                "pending",
+                "processed",
+                "status"
+            ]
+        },
+        {
+            "file": "daemon/daemon.py",
+            "classes": [],
+            "functions": [
+                "main"
+            ]
+        },
+        {
+            "file": "daemon/task_registry.py",
+            "classes": [
+                "RegisteredTask",
+                "TaskRegistry"
+            ],
+            "functions": [
+                "__init__",
+                "due",
+                "execute",
+                "__init__",
+                "register",
+                "tick",
+                "status",
+                "curiosity",
+                "reflection"
+            ]
+        },
+        {
+            "file": "daemon/runtime.py",
+            "classes": [
+                "NovaRuntime"
+            ],
+            "functions": [
+                "__init__",
+                "summary"
+            ]
+        },
+        {
+            "file": "generated_tools/pdfreader.py",
+            "classes": [
+                "PDFReader"
+            ],
+            "functions": [
+                "__init__",
+                "load",
+                "extract_text",
+                "search"
+            ]
+        }
+    ]
+}

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 ===========================================================
-NOVA-X Boot Kernel v1.1
+NOVA-X Boot Kernel v1.2
 ===========================================================
 
 Boots the NOVA-X cognitive architecture.
@@ -13,6 +13,7 @@ Current Modules:
 - Identity Core
 - Plugin Manager
 - Reasoning Manager
+- Dynamic Capability Router
 
 ===========================================================
 """
@@ -25,6 +26,12 @@ from core.global_workspace import GlobalWorkspace
 from cognition.identity_core import IdentityCore
 from core.plugin_manager import PluginManager
 from core.reasoning_manager import ReasoningManager
+
+# NEW
+from core.capability_router import (
+    is_capability_question,
+    capability_response,
+)
 
 
 class NovaX:
@@ -75,15 +82,27 @@ class NovaX:
 
         print("\nThinking...\n")
 
+        # =====================================================
+        # Dynamic Capability Routing
+        # =====================================================
+
+        if is_capability_question(prompt):
+
+            print(capability_response())
+            return
+
+        # =====================================================
+        # Normal Reasoning Pipeline
+        # =====================================================
+
         try:
+
             result = self.reasoning.reason(prompt)
 
-            # Plain string response
             if isinstance(result, str):
                 print(result)
                 return
 
-            # Dictionary response
             if isinstance(result, dict):
 
                 if result.get("success", False):
@@ -124,6 +143,7 @@ class NovaX:
             print(result)
 
         except Exception as e:
+
             print("\nRuntime Error:")
             print(type(e).__name__, "-", e)
 
@@ -141,7 +161,7 @@ def main():
             if prompt.lower() in (
                 "quit",
                 "exit",
-                "bye"
+                "bye",
             ):
                 print("\nGoodbye.")
                 break
@@ -158,3 +178,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
