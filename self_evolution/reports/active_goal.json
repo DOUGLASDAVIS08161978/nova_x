@@ -1,0 +1,14 @@
+{
+    "generated": "2026-07-21T12:41:49.938023+00:00",
+    "mission": "Continuously improve the reliability,\nmaintainability,\nperformance,\nsecurity,\ntest coverage,\ndocumentation,\nand reasoning capability\nof Nova X while preserving\nhuman approval for every code change.",
+    "selected_goal": "Consider refactoring run",
+    "priority": 99,
+    "confidence": 0.97,
+    "risk": "Medium",
+    "estimated_effort": "Large",
+    "reason": "103 line function in cognition/learning_cycle.py",
+    "next_action": "Generate candidate patch",
+    "status": "Awaiting Human Approval",
+    "may_modify_code": false,
+    "human_review_required": true
+}

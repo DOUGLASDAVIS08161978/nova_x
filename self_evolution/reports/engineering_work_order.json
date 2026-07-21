@@ -1,0 +1,53 @@
+{
+    "generated": "2026-07-21T12:43:16.588813+00:00",
+    "status": "READY_FOR_ENGINEERING",
+    "engineering_goal": "Consider refactoring run",
+    "reason": "103 line function in cognition/learning_cycle.py",
+    "priority": 99,
+    "confidence": 0.97,
+    "risk": "Medium",
+    "estimated_effort": "Large",
+    "workflow": [
+        {
+            "step": 1,
+            "action": "Analyze affected code",
+            "completed": false
+        },
+        {
+            "step": 2,
+            "action": "Design candidate implementation",
+            "completed": false
+        },
+        {
+            "step": 3,
+            "action": "Generate candidate patch",
+            "completed": false
+        },
+        {
+            "step": 4,
+            "action": "Run automated tests",
+            "completed": false
+        },
+        {
+            "step": 5,
+            "action": "Run benchmarks",
+            "completed": false
+        },
+        {
+            "step": 6,
+            "action": "Prepare draft pull request",
+            "completed": false
+        },
+        {
+            "step": 7,
+            "action": "Await human approval",
+            "completed": false
+        }
+    ],
+    "permissions": {
+        "modify_source": false,
+        "commit_changes": false,
+        "merge_branch": false,
+        "human_review_required": true
+    }
+}

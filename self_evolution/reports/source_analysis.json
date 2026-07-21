@@ -1,0 +1,5155 @@
+{
+    "generated": "2026-07-21T12:45:17.762050+00:00",
+    "files": [
+        {
+            "file": "cognition/__init__.py",
+            "functions": []
+        },
+        {
+            "file": "cognition/cognitive_cycle.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 36,
+                    "end_line": 44,
+                    "length": 9,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "observe",
+                    "line": 47,
+                    "end_line": 55,
+                    "length": 9,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 4
+                },
+                {
+                    "name": "reflect",
+                    "line": 58,
+                    "end_line": 79,
+                    "length": 22,
+                    "arguments": 2,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 5
+                },
+                {
+                    "name": "plan",
+                    "line": 82,
+                    "end_line": 112,
+                    "length": 31,
+                    "arguments": 2,
+                    "returns": 1,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 4
+                },
+                {
+                    "name": "remember",
+                    "line": 115,
+                    "end_line": 131,
+                    "length": 17,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "cycle",
+                    "line": 134,
+                    "end_line": 154,
+                    "length": 21,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 8
+                },
+                {
+                    "name": "run",
+                    "line": 157,
+                    "end_line": 169,
+                    "length": 13,
+                    "arguments": 3,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 1,
+                    "calls": 3
+                }
+            ]
+        },
+        {
+            "file": "cognition/consistency_checker.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 35,
+                    "end_line": 39,
+                    "length": 5,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "check",
+                    "line": 42,
+                    "end_line": 95,
+                    "length": 54,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 2,
+                    "loops": 3,
+                    "calls": 9
+                },
+                {
+                    "name": "publish_results",
+                    "line": 98,
+                    "end_line": 112,
+                    "length": 15,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 1,
+                    "calls": 3
+                }
+            ]
+        },
+        {
+            "file": "cognition/curiosity_engine.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 14,
+                    "end_line": 16,
+                    "length": 3,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "cycle",
+                    "line": 18,
+                    "end_line": 40,
+                    "length": 23,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 4
+                }
+            ]
+        },
+        {
+            "file": "cognition/decision_engine.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 25,
+                    "end_line": 27,
+                    "length": 3,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "decide",
+                    "line": 30,
+                    "end_line": 96,
+                    "length": 67,
+                    "arguments": 1,
+                    "returns": 4,
+                    "ifs": 3,
+                    "loops": 0,
+                    "calls": 5
+                },
+                {
+                    "name": "execute",
+                    "line": 99,
+                    "end_line": 117,
+                    "length": 19,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                }
+            ]
+        },
+        {
+            "file": "cognition/executor.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 29,
+                    "end_line": 31,
+                    "length": 3,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "execute",
+                    "line": 34,
+                    "end_line": 101,
+                    "length": 68,
+                    "arguments": 2,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 1,
+                    "calls": 8
+                }
+            ]
+        },
+        {
+            "file": "cognition/goal_manager.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 32,
+                    "end_line": 44,
+                    "length": 13,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 3
+                },
+                {
+                    "name": "load",
+                    "line": 47,
+                    "end_line": 59,
+                    "length": 13,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 3
+                },
+                {
+                    "name": "save",
+                    "line": 62,
+                    "end_line": 70,
+                    "length": 9,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "create_goal",
+                    "line": 73,
+                    "end_line": 109,
+                    "length": 37,
+                    "arguments": 4,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 6
+                },
+                {
+                    "name": "update_progress",
+                    "line": 112,
+                    "end_line": 132,
+                    "length": 21,
+                    "arguments": 3,
+                    "returns": 2,
+                    "ifs": 2,
+                    "loops": 1,
+                    "calls": 1
+                },
+                {
+                    "name": "active_goals",
+                    "line": 135,
+                    "end_line": 143,
+                    "length": 9,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "summary",
+                    "line": 146,
+                    "end_line": 156,
+                    "length": 11,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 3
+                }
+            ]
+        },
+        {
+            "file": "cognition/identity_context.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 22,
+                    "end_line": 59,
+                    "length": 38,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "get_profile",
+                    "line": 62,
+                    "end_line": 64,
+                    "length": 3,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "build_context",
+                    "line": 67,
+                    "end_line": 103,
+                    "length": 37,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                }
+            ]
+        },
+        {
+            "file": "cognition/identity_core.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 14,
+                    "end_line": 39,
+                    "length": 26,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 4
+                },
+                {
+                    "name": "add_belief",
+                    "line": 41,
+                    "end_line": 46,
+                    "length": 6,
+                    "arguments": 3,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "update_preference",
+                    "line": 48,
+                    "end_line": 50,
+                    "length": 3,
+                    "arguments": 3,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "reflect",
+                    "line": 52,
+                    "end_line": 57,
+                    "length": 6,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 3
+                },
+                {
+                    "name": "self_summary",
+                    "line": 59,
+                    "end_line": 86,
+                    "length": 28,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 4,
+                    "calls": 16
+                },
+                {
+                    "name": "update",
+                    "line": 88,
+                    "end_line": 92,
+                    "length": 5,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                }
+            ]
+        },
+        {
+            "file": "cognition/knowledge_context.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 24,
+                    "end_line": 26,
+                    "length": 3,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "build_context",
+                    "line": 29,
+                    "end_line": 109,
+                    "length": 81,
+                    "arguments": 2,
+                    "returns": 2,
+                    "ifs": 4,
+                    "loops": 5,
+                    "calls": 19
+                }
+            ]
+        },
+        {
+            "file": "cognition/knowledge_query_engine.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 22,
+                    "end_line": 24,
+                    "length": 3,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "find_entity",
+                    "line": 27,
+                    "end_line": 35,
+                    "length": 9,
+                    "arguments": 2,
+                    "returns": 2,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "search_entities",
+                    "line": 38,
+                    "end_line": 56,
+                    "length": 19,
+                    "arguments": 2,
+                    "returns": 1,
+                    "ifs": 1,
+                    "loops": 1,
+                    "calls": 4
+                },
+                {
+                    "name": "relationships_for",
+                    "line": 59,
+                    "end_line": 73,
+                    "length": 15,
+                    "arguments": 2,
+                    "returns": 1,
+                    "ifs": 1,
+                    "loops": 1,
+                    "calls": 1
+                },
+                {
+                    "name": "stats",
+                    "line": 76,
+                    "end_line": 78,
+                    "length": 3,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                }
+            ]
+        },
+        {
+            "file": "cognition/knowledge_store.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 25,
+                    "end_line": 29,
+                    "length": 5,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "cycle",
+                    "line": 31,
+                    "end_line": 74,
+                    "length": 44,
+                    "arguments": 1,
+                    "returns": 2,
+                    "ifs": 2,
+                    "loops": 0,
+                    "calls": 14
+                }
+            ]
+        },
+        {
+            "file": "cognition/learning_cycle.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 30,
+                    "end_line": 37,
+                    "length": 8,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 5
+                },
+                {
+                    "name": "run",
+                    "line": 39,
+                    "end_line": 141,
+                    "length": 103,
+                    "arguments": 1,
+                    "returns": 2,
+                    "ifs": 2,
+                    "loops": 1,
+                    "calls": 33
+                }
+            ]
+        },
+        {
+            "file": "cognition/observation_engine.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 25,
+                    "end_line": 36,
+                    "length": 12,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 3
+                },
+                {
+                    "name": "load",
+                    "line": 39,
+                    "end_line": 51,
+                    "length": 13,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 3
+                },
+                {
+                    "name": "save",
+                    "line": 54,
+                    "end_line": 62,
+                    "length": 9,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "observe_image",
+                    "line": 65,
+                    "end_line": 91,
+                    "length": 27,
+                    "arguments": 2,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 4
+                },
+                {
+                    "name": "recent",
+                    "line": 94,
+                    "end_line": 96,
+                    "length": 3,
+                    "arguments": 2,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "latest",
+                    "line": 99,
+                    "end_line": 105,
+                    "length": 7,
+                    "arguments": 1,
+                    "returns": 2,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "count",
+                    "line": 108,
+                    "end_line": 110,
+                    "length": 3,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "stats",
+                    "line": 113,
+                    "end_line": 120,
+                    "length": 8,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                }
+            ]
+        },
+        {
+            "file": "cognition/patch_generator.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 37,
+                    "end_line": 44,
+                    "length": 8,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "create_patch",
+                    "line": 47,
+                    "end_line": 99,
+                    "length": 53,
+                    "arguments": 5,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 6
+                },
+                {
+                    "name": "list_patches",
+                    "line": 102,
+                    "end_line": 112,
+                    "length": 11,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 1,
+                    "calls": 4
+                }
+            ]
+        },
+        {
+            "file": "cognition/planner.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 29,
+                    "end_line": 31,
+                    "length": 3,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "create_plan",
+                    "line": 34,
+                    "end_line": 88,
+                    "length": 55,
+                    "arguments": 2,
+                    "returns": 1,
+                    "ifs": 3,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "publish_plan",
+                    "line": 91,
+                    "end_line": 113,
+                    "length": 23,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 1,
+                    "calls": 3
+                }
+            ]
+        },
+        {
+            "file": "cognition/reflection_engine.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 25,
+                    "end_line": 27,
+                    "length": 3,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "cycle",
+                    "line": 29,
+                    "end_line": 87,
+                    "length": 59,
+                    "arguments": 1,
+                    "returns": 2,
+                    "ifs": 2,
+                    "loops": 0,
+                    "calls": 20
+                }
+            ]
+        },
+        {
+            "file": "cognition/research_engine.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 26,
+                    "end_line": 28,
+                    "length": 3,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "cycle",
+                    "line": 30,
+                    "end_line": 78,
+                    "length": 49,
+                    "arguments": 1,
+                    "returns": 2,
+                    "ifs": 2,
+                    "loops": 0,
+                    "calls": 15
+                }
+            ]
+        },
+        {
+            "file": "cognition/research_knowledge_bridge.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 25,
+                    "end_line": 27,
+                    "length": 3,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "extract_entities",
+                    "line": 30,
+                    "end_line": 68,
+                    "length": 39,
+                    "arguments": 2,
+                    "returns": 1,
+                    "ifs": 2,
+                    "loops": 2,
+                    "calls": 8
+                },
+                {
+                    "name": "import_research",
+                    "line": 71,
+                    "end_line": 113,
+                    "length": 43,
+                    "arguments": 3,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 1,
+                    "calls": 5
+                }
+            ]
+        },
+        {
+            "file": "cognition/research_provider.py",
+            "functions": [
+                {
+                    "name": "search",
+                    "line": 24,
+                    "end_line": 94,
+                    "length": 71,
+                    "arguments": 2,
+                    "returns": 2,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 7
+                },
+                {
+                    "name": "search",
+                    "line": 101,
+                    "end_line": 169,
+                    "length": 69,
+                    "arguments": 2,
+                    "returns": 2,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 9
+                },
+                {
+                    "name": "__init__",
+                    "line": 176,
+                    "end_line": 184,
+                    "length": 9,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "search",
+                    "line": 188,
+                    "end_line": 211,
+                    "length": 24,
+                    "arguments": 2,
+                    "returns": 2,
+                    "ifs": 1,
+                    "loops": 1,
+                    "calls": 1
+                }
+            ]
+        },
+        {
+            "file": "cognition/self_improvement.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 26,
+                    "end_line": 28,
+                    "length": 3,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "propose",
+                    "line": 30,
+                    "end_line": 51,
+                    "length": 22,
+                    "arguments": 4,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 3
+                },
+                {
+                    "name": "list_proposals",
+                    "line": 53,
+                    "end_line": 55,
+                    "length": 3,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "summary",
+                    "line": 57,
+                    "end_line": 73,
+                    "length": 17,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                }
+            ]
+        },
+        {
+            "file": "cognition/vision_analyzer.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 25,
+                    "end_line": 29,
+                    "length": 5,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "analyze",
+                    "line": 32,
+                    "end_line": 71,
+                    "length": 40,
+                    "arguments": 2,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 5
+                },
+                {
+                    "name": "latest",
+                    "line": 74,
+                    "end_line": 80,
+                    "length": 7,
+                    "arguments": 1,
+                    "returns": 2,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "stats",
+                    "line": 83,
+                    "end_line": 90,
+                    "length": 8,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                }
+            ]
+        },
+        {
+            "file": "cognition/vision_knowledge_bridge.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 25,
+                    "end_line": 29,
+                    "length": 5,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "import_analysis",
+                    "line": 32,
+                    "end_line": 83,
+                    "length": 52,
+                    "arguments": 2,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 1,
+                    "calls": 8
+                },
+                {
+                    "name": "status",
+                    "line": 86,
+                    "end_line": 94,
+                    "length": 9,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                }
+            ]
+        },
+        {
+            "file": "cognition/workspace_bridge.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 27,
+                    "end_line": 31,
+                    "length": 5,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "publish_observation",
+                    "line": 34,
+                    "end_line": 100,
+                    "length": 67,
+                    "arguments": 2,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 9
+                },
+                {
+                    "name": "status",
+                    "line": 103,
+                    "end_line": 110,
+                    "length": 8,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                }
+            ]
+        },
+        {
+            "file": "core/__init__.py",
+            "functions": []
+        },
+        {
+            "file": "core/action_planner.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 19,
+                    "end_line": 21,
+                    "length": 3,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "create_plan",
+                    "line": 23,
+                    "end_line": 63,
+                    "length": 41,
+                    "arguments": 2,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "print_plan",
+                    "line": 65,
+                    "end_line": 84,
+                    "length": 20,
+                    "arguments": 3,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 1,
+                    "calls": 9
+                }
+            ]
+        },
+        {
+            "file": "core/android_agent.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 20,
+                    "end_line": 21,
+                    "length": 2,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "_run",
+                    "line": 23,
+                    "end_line": 53,
+                    "length": 31,
+                    "arguments": 2,
+                    "returns": 2,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 4
+                },
+                {
+                    "name": "open_url",
+                    "line": 59,
+                    "end_line": 65,
+                    "length": 7,
+                    "arguments": 2,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "share_text",
+                    "line": 71,
+                    "end_line": 78,
+                    "length": 8,
+                    "arguments": 2,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "open_file",
+                    "line": 84,
+                    "end_line": 91,
+                    "length": 8,
+                    "arguments": 2,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "run_command",
+                    "line": 97,
+                    "end_line": 120,
+                    "length": 24,
+                    "arguments": 2,
+                    "returns": 2,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 1
+                }
+            ]
+        },
+        {
+            "file": "core/capability_analyzer.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 19,
+                    "end_line": 20,
+                    "length": 2,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "analyze",
+                    "line": 22,
+                    "end_line": 47,
+                    "length": 26,
+                    "arguments": 2,
+                    "returns": 4,
+                    "ifs": 3,
+                    "loops": 0,
+                    "calls": 5
+                },
+                {
+                    "name": "propose_tool",
+                    "line": 49,
+                    "end_line": 71,
+                    "length": 23,
+                    "arguments": 2,
+                    "returns": 3,
+                    "ifs": 2,
+                    "loops": 0,
+                    "calls": 1
+                }
+            ]
+        },
+        {
+            "file": "core/capability_registry.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 28,
+                    "end_line": 30,
+                    "length": 3,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "register",
+                    "line": 32,
+                    "end_line": 38,
+                    "length": 7,
+                    "arguments": 5,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "has",
+                    "line": 40,
+                    "end_line": 42,
+                    "length": 3,
+                    "arguments": 2,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "enabled",
+                    "line": 44,
+                    "end_line": 49,
+                    "length": 6,
+                    "arguments": 2,
+                    "returns": 2,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "provider",
+                    "line": 51,
+                    "end_line": 56,
+                    "length": 6,
+                    "arguments": 2,
+                    "returns": 2,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "save",
+                    "line": 58,
+                    "end_line": 65,
+                    "length": 8,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "load",
+                    "line": 67,
+                    "end_line": 73,
+                    "length": 7,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 3
+                },
+                {
+                    "name": "summary",
+                    "line": 75,
+                    "end_line": 94,
+                    "length": 20,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 1,
+                    "calls": 15
+                }
+            ]
+        },
+        {
+            "file": "core/capability_router.py",
+            "functions": [
+                {
+                    "name": "is_capability_question",
+                    "line": 26,
+                    "end_line": 30,
+                    "length": 5,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "capability_response",
+                    "line": 33,
+                    "end_line": 39,
+                    "length": 7,
+                    "arguments": 0,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 3
+                }
+            ]
+        },
+        {
+            "file": "core/code_executor.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 28,
+                    "end_line": 29,
+                    "length": 2,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "execute_python",
+                    "line": 31,
+                    "end_line": 90,
+                    "length": 60,
+                    "arguments": 2,
+                    "returns": 2,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 7
+                }
+            ]
+        },
+        {
+            "file": "core/cognitive_orchestrator.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 29,
+                    "end_line": 43,
+                    "length": 15,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 6
+                },
+                {
+                    "name": "observe",
+                    "line": 46,
+                    "end_line": 56,
+                    "length": 11,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 7
+                },
+                {
+                    "name": "reason",
+                    "line": 59,
+                    "end_line": 83,
+                    "length": 25,
+                    "arguments": 3,
+                    "returns": 2,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "improve",
+                    "line": 86,
+                    "end_line": 100,
+                    "length": 15,
+                    "arguments": 2,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "remember",
+                    "line": 103,
+                    "end_line": 121,
+                    "length": 19,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "run_cycle",
+                    "line": 124,
+                    "end_line": 153,
+                    "length": 30,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 10
+                },
+                {
+                    "name": "run",
+                    "line": 156,
+                    "end_line": 162,
+                    "length": 7,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 1,
+                    "calls": 3
+                }
+            ]
+        },
+        {
+            "file": "core/event_bus.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 27,
+                    "end_line": 31,
+                    "length": 5,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "subscribe",
+                    "line": 34,
+                    "end_line": 40,
+                    "length": 7,
+                    "arguments": 3,
+                    "returns": 0,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "publish",
+                    "line": 43,
+                    "end_line": 77,
+                    "length": 35,
+                    "arguments": 3,
+                    "returns": 1,
+                    "ifs": 1,
+                    "loops": 1,
+                    "calls": 5
+                },
+                {
+                    "name": "recent",
+                    "line": 80,
+                    "end_line": 82,
+                    "length": 3,
+                    "arguments": 2,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "status",
+                    "line": 85,
+                    "end_line": 95,
+                    "length": 11,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "memory_listener",
+                    "line": 104,
+                    "end_line": 109,
+                    "length": 6,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                }
+            ]
+        },
+        {
+            "file": "core/execution_history.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 23,
+                    "end_line": 30,
+                    "length": 8,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 3
+                },
+                {
+                    "name": "_load",
+                    "line": 32,
+                    "end_line": 35,
+                    "length": 4,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "_save",
+                    "line": 37,
+                    "end_line": 40,
+                    "length": 4,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "record",
+                    "line": 42,
+                    "end_line": 67,
+                    "length": 26,
+                    "arguments": 3,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 7
+                },
+                {
+                    "name": "summary",
+                    "line": 69,
+                    "end_line": 97,
+                    "length": 29,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 1,
+                    "calls": 14
+                }
+            ]
+        },
+        {
+            "file": "core/execution_pipeline.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 20,
+                    "end_line": 22,
+                    "length": 3,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "execute",
+                    "line": 24,
+                    "end_line": 53,
+                    "length": 30,
+                    "arguments": 2,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 1,
+                    "calls": 16
+                }
+            ]
+        },
+        {
+            "file": "core/executive_controller.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 19,
+                    "end_line": 30,
+                    "length": 12,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "run",
+                    "line": 32,
+                    "end_line": 59,
+                    "length": 28,
+                    "arguments": 2,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 1,
+                    "calls": 18
+                }
+            ]
+        },
+        {
+            "file": "core/executive_router.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 32,
+                    "end_line": 34,
+                    "length": 3,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "route",
+                    "line": 36,
+                    "end_line": 115,
+                    "length": 80,
+                    "arguments": 2,
+                    "returns": 7,
+                    "ifs": 8,
+                    "loops": 1,
+                    "calls": 14
+                }
+            ]
+        },
+        {
+            "file": "core/experiment_engine.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 20,
+                    "end_line": 21,
+                    "length": 2,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "run_experiment",
+                    "line": 23,
+                    "end_line": 48,
+                    "length": 26,
+                    "arguments": 3,
+                    "returns": 1,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 14
+                }
+            ]
+        },
+        {
+            "file": "core/global_workspace.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 27,
+                    "end_line": 29,
+                    "length": 3,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "broadcast",
+                    "line": 32,
+                    "end_line": 69,
+                    "length": 38,
+                    "arguments": 7,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 5
+                },
+                {
+                    "name": "get_events",
+                    "line": 72,
+                    "end_line": 74,
+                    "length": 3,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "get_category",
+                    "line": 77,
+                    "end_line": 88,
+                    "length": 12,
+                    "arguments": 2,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "get_high_priority",
+                    "line": 91,
+                    "end_line": 102,
+                    "length": 12,
+                    "arguments": 2,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "recent",
+                    "line": 105,
+                    "end_line": 110,
+                    "length": 6,
+                    "arguments": 2,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "clear",
+                    "line": 113,
+                    "end_line": 115,
+                    "length": 3,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "stats",
+                    "line": 118,
+                    "end_line": 134,
+                    "length": 17,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 1,
+                    "calls": 2
+                },
+                {
+                    "name": "update",
+                    "line": 137,
+                    "end_line": 153,
+                    "length": 17,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 1,
+                    "calls": 8
+                }
+            ]
+        },
+        {
+            "file": "core/goal_planner.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 22,
+                    "end_line": 23,
+                    "length": 2,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "create_plan",
+                    "line": 25,
+                    "end_line": 69,
+                    "length": 45,
+                    "arguments": 2,
+                    "returns": 1,
+                    "ifs": 2,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "save_plan",
+                    "line": 71,
+                    "end_line": 86,
+                    "length": 16,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 6
+                },
+                {
+                    "name": "print_plan",
+                    "line": 88,
+                    "end_line": 107,
+                    "length": 20,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 1,
+                    "calls": 14
+                }
+            ]
+        },
+        {
+            "file": "core/hypothesis_engine.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 23,
+                    "end_line": 24,
+                    "length": 2,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "evaluate",
+                    "line": 26,
+                    "end_line": 47,
+                    "length": 22,
+                    "arguments": 3,
+                    "returns": 1,
+                    "ifs": 1,
+                    "loops": 1,
+                    "calls": 3
+                },
+                {
+                    "name": "save",
+                    "line": 49,
+                    "end_line": 64,
+                    "length": 16,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 6
+                },
+                {
+                    "name": "print_report",
+                    "line": 66,
+                    "end_line": 105,
+                    "length": 40,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 2,
+                    "calls": 23
+                }
+            ]
+        },
+        {
+            "file": "core/innovation_queue.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 21,
+                    "end_line": 29,
+                    "length": 9,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 3
+                },
+                {
+                    "name": "_load",
+                    "line": 31,
+                    "end_line": 35,
+                    "length": 5,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "_save",
+                    "line": 37,
+                    "end_line": 41,
+                    "length": 5,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "add",
+                    "line": 43,
+                    "end_line": 70,
+                    "length": 28,
+                    "arguments": 4,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 5
+                },
+                {
+                    "name": "list_items",
+                    "line": 72,
+                    "end_line": 74,
+                    "length": 3,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "show",
+                    "line": 76,
+                    "end_line": 107,
+                    "length": 32,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 1,
+                    "loops": 1,
+                    "calls": 15
+                }
+            ]
+        },
+        {
+            "file": "core/living_cycle_daemon.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 17,
+                    "end_line": 40,
+                    "length": 24,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 8
+                },
+                {
+                    "name": "heartbeat",
+                    "line": 42,
+                    "end_line": 62,
+                    "length": 21,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 5
+                },
+                {
+                    "name": "reflect",
+                    "line": 64,
+                    "end_line": 78,
+                    "length": 15,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 5
+                },
+                {
+                    "name": "cycle",
+                    "line": 80,
+                    "end_line": 83,
+                    "length": 4,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "_loop",
+                    "line": 85,
+                    "end_line": 97,
+                    "length": 13,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 1,
+                    "calls": 3
+                },
+                {
+                    "name": "start",
+                    "line": 99,
+                    "end_line": 113,
+                    "length": 15,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 3
+                },
+                {
+                    "name": "stop",
+                    "line": 115,
+                    "end_line": 122,
+                    "length": 8,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 2
+                }
+            ]
+        },
+        {
+            "file": "core/module_base.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 22,
+                    "end_line": 30,
+                    "length": 9,
+                    "arguments": 4,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "run",
+                    "line": 32,
+                    "end_line": 38,
+                    "length": 7,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "info",
+                    "line": 40,
+                    "end_line": 47,
+                    "length": 8,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "__init__",
+                    "line": 56,
+                    "end_line": 62,
+                    "length": 7,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "run",
+                    "line": 64,
+                    "end_line": 75,
+                    "length": 12,
+                    "arguments": 2,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                }
+            ]
+        },
+        {
+            "file": "core/module_registry.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 19,
+                    "end_line": 21,
+                    "length": 3,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "register",
+                    "line": 23,
+                    "end_line": 30,
+                    "length": 8,
+                    "arguments": 5,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "enable",
+                    "line": 32,
+                    "end_line": 35,
+                    "length": 4,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "disable",
+                    "line": 37,
+                    "end_line": 40,
+                    "length": 4,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "enabled_modules",
+                    "line": 42,
+                    "end_line": 48,
+                    "length": 7,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "all_modules",
+                    "line": 50,
+                    "end_line": 52,
+                    "length": 3,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "summary",
+                    "line": 54,
+                    "end_line": 63,
+                    "length": 10,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 3
+                }
+            ]
+        },
+        {
+            "file": "core/pipeline_context.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 19,
+                    "end_line": 37,
+                    "length": 19,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "set_plan",
+                    "line": 39,
+                    "end_line": 41,
+                    "length": 3,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "add_execution",
+                    "line": 43,
+                    "end_line": 45,
+                    "length": 3,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "add_gap",
+                    "line": 47,
+                    "end_line": 49,
+                    "length": 3,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "add_generated_tool",
+                    "line": 51,
+                    "end_line": 53,
+                    "length": 3,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "add_innovation",
+                    "line": 55,
+                    "end_line": 57,
+                    "length": 3,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "set_score",
+                    "line": 59,
+                    "end_line": 61,
+                    "length": 3,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "summary",
+                    "line": 63,
+                    "end_line": 83,
+                    "length": 21,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 5
+                }
+            ]
+        },
+        {
+            "file": "core/plugin_manager.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 13,
+                    "end_line": 15,
+                    "length": 3,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "discover",
+                    "line": 17,
+                    "end_line": 30,
+                    "length": 14,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 2,
+                    "loops": 1,
+                    "calls": 10
+                },
+                {
+                    "name": "list_plugins",
+                    "line": 32,
+                    "end_line": 41,
+                    "length": 10,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 1,
+                    "loops": 1,
+                    "calls": 3
+                },
+                {
+                    "name": "update",
+                    "line": 43,
+                    "end_line": 45,
+                    "length": 3,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                }
+            ]
+        },
+        {
+            "file": "core/pull_request_manager.py",
+            "functions": [
+                {
+                    "name": "run",
+                    "line": 27,
+                    "end_line": 33,
+                    "length": 7,
+                    "arguments": 2,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "slug",
+                    "line": 35,
+                    "end_line": 39,
+                    "length": 5,
+                    "arguments": 2,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 4
+                },
+                {
+                    "name": "create_pull_request",
+                    "line": 41,
+                    "end_line": 148,
+                    "length": 108,
+                    "arguments": 3,
+                    "returns": 8,
+                    "ifs": 9,
+                    "loops": 0,
+                    "calls": 40
+                }
+            ]
+        },
+        {
+            "file": "core/rate_limit_manager.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 25,
+                    "end_line": 36,
+                    "length": 12,
+                    "arguments": 5,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "token_settings",
+                    "line": 38,
+                    "end_line": 43,
+                    "length": 6,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "execute",
+                    "line": 45,
+                    "end_line": 78,
+                    "length": 34,
+                    "arguments": 2,
+                    "returns": 1,
+                    "ifs": 1,
+                    "loops": 1,
+                    "calls": 8
+                },
+                {
+                    "name": "fake_api",
+                    "line": 101,
+                    "end_line": 109,
+                    "length": 9,
+                    "arguments": 0,
+                    "returns": 1,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 1
+                }
+            ]
+        },
+        {
+            "file": "core/reasoning_manager.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 32,
+                    "end_line": 44,
+                    "length": 13,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 4
+                },
+                {
+                    "name": "load_engines",
+                    "line": 47,
+                    "end_line": 57,
+                    "length": 11,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 3
+                },
+                {
+                    "name": "reason",
+                    "line": 60,
+                    "end_line": 166,
+                    "length": 107,
+                    "arguments": 2,
+                    "returns": 3,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 11
+                },
+                {
+                    "name": "available_engines",
+                    "line": 169,
+                    "end_line": 173,
+                    "length": 5,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "status",
+                    "line": 176,
+                    "end_line": 189,
+                    "length": 14,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 4
+                }
+            ]
+        },
+        {
+            "file": "core/reasoning_manager_backup.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 25,
+                    "end_line": 33,
+                    "length": 9,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "load_engines",
+                    "line": 36,
+                    "end_line": 51,
+                    "length": 16,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 3
+                },
+                {
+                    "name": "reason",
+                    "line": 54,
+                    "end_line": 128,
+                    "length": 75,
+                    "arguments": 2,
+                    "returns": 3,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 7
+                },
+                {
+                    "name": "status",
+                    "line": 131,
+                    "end_line": 141,
+                    "length": 11,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 3
+                }
+            ]
+        },
+        {
+            "file": "core/reflection_engine_v2.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 23,
+                    "end_line": 25,
+                    "length": 3,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "reflect",
+                    "line": 27,
+                    "end_line": 50,
+                    "length": 24,
+                    "arguments": 6,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "save",
+                    "line": 52,
+                    "end_line": 77,
+                    "length": 26,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 6
+                },
+                {
+                    "name": "print_report",
+                    "line": 79,
+                    "end_line": 118,
+                    "length": 40,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 2,
+                    "calls": 19
+                }
+            ]
+        },
+        {
+            "file": "core/reflection_journal.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 31,
+                    "end_line": 38,
+                    "length": 8,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 4
+                },
+                {
+                    "name": "load",
+                    "line": 40,
+                    "end_line": 48,
+                    "length": 9,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "save",
+                    "line": 50,
+                    "end_line": 58,
+                    "length": 9,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "add",
+                    "line": 60,
+                    "end_line": 71,
+                    "length": 12,
+                    "arguments": 4,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 4
+                },
+                {
+                    "name": "latest",
+                    "line": 73,
+                    "end_line": 75,
+                    "length": 3,
+                    "arguments": 2,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "summary",
+                    "line": 77,
+                    "end_line": 92,
+                    "length": 16,
+                    "arguments": 1,
+                    "returns": 2,
+                    "ifs": 1,
+                    "loops": 1,
+                    "calls": 3
+                }
+            ]
+        },
+        {
+            "file": "core/repository_intelligence.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 26,
+                    "end_line": 32,
+                    "length": 7,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "scan",
+                    "line": 34,
+                    "end_line": 57,
+                    "length": 24,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 1,
+                    "loops": 2,
+                    "calls": 5
+                },
+                {
+                    "name": "analyze",
+                    "line": 59,
+                    "end_line": 83,
+                    "length": 25,
+                    "arguments": 2,
+                    "returns": 1,
+                    "ifs": 2,
+                    "loops": 1,
+                    "calls": 10
+                },
+                {
+                    "name": "save",
+                    "line": 85,
+                    "end_line": 89,
+                    "length": 5,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "print_report",
+                    "line": 91,
+                    "end_line": 143,
+                    "length": 53,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 3,
+                    "loops": 3,
+                    "calls": 31
+                }
+            ]
+        },
+        {
+            "file": "core/self_capability_report.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 22,
+                    "end_line": 24,
+                    "length": 3,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "load",
+                    "line": 26,
+                    "end_line": 31,
+                    "length": 6,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 3
+                },
+                {
+                    "name": "enabled",
+                    "line": 33,
+                    "end_line": 39,
+                    "length": 7,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "report",
+                    "line": 41,
+                    "end_line": 62,
+                    "length": 22,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 1,
+                    "calls": 15
+                },
+                {
+                    "name": "self_description",
+                    "line": 64,
+                    "end_line": 83,
+                    "length": 20,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 1,
+                    "calls": 7
+                }
+            ]
+        },
+        {
+            "file": "core/self_evaluation.py",
+            "functions": [
+                {
+                    "name": "evaluate",
+                    "line": 17,
+                    "end_line": 42,
+                    "length": 26,
+                    "arguments": 2,
+                    "returns": 1,
+                    "ifs": 3,
+                    "loops": 0,
+                    "calls": 3
+                }
+            ]
+        },
+        {
+            "file": "core/startup_health_check.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 32,
+                    "end_line": 33,
+                    "length": 2,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "run",
+                    "line": 35,
+                    "end_line": 45,
+                    "length": 11,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 1,
+                    "calls": 3
+                },
+                {
+                    "name": "passed",
+                    "line": 47,
+                    "end_line": 48,
+                    "length": 2,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "report",
+                    "line": 50,
+                    "end_line": 73,
+                    "length": 24,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 1,
+                    "loops": 1,
+                    "calls": 13
+                }
+            ]
+        },
+        {
+            "file": "core/task_executor.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 15,
+                    "end_line": 16,
+                    "length": 2,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "run",
+                    "line": 18,
+                    "end_line": 19,
+                    "length": 2,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "__init__",
+                    "line": 24,
+                    "end_line": 25,
+                    "length": 2,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "_select_tool",
+                    "line": 27,
+                    "end_line": 40,
+                    "length": 14,
+                    "arguments": 2,
+                    "returns": 4,
+                    "ifs": 3,
+                    "loops": 0,
+                    "calls": 4
+                },
+                {
+                    "name": "execute",
+                    "line": 42,
+                    "end_line": 74,
+                    "length": 33,
+                    "arguments": 2,
+                    "returns": 1,
+                    "ifs": 1,
+                    "loops": 1,
+                    "calls": 8
+                }
+            ]
+        },
+        {
+            "file": "core/task_planner.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 18,
+                    "end_line": 19,
+                    "length": 2,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "create_plan",
+                    "line": 21,
+                    "end_line": 62,
+                    "length": 42,
+                    "arguments": 2,
+                    "returns": 1,
+                    "ifs": 7,
+                    "loops": 0,
+                    "calls": 9
+                }
+            ]
+        },
+        {
+            "file": "core/tool_architect.py",
+            "functions": [
+                {
+                    "name": "design",
+                    "line": 19,
+                    "end_line": 35,
+                    "length": 17,
+                    "arguments": 2,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 6
+                },
+                {
+                    "name": "_suggest_methods",
+                    "line": 37,
+                    "end_line": 59,
+                    "length": 23,
+                    "arguments": 2,
+                    "returns": 3,
+                    "ifs": 2,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "_dependencies",
+                    "line": 61,
+                    "end_line": 71,
+                    "length": 11,
+                    "arguments": 2,
+                    "returns": 3,
+                    "ifs": 2,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "_tests",
+                    "line": 73,
+                    "end_line": 79,
+                    "length": 7,
+                    "arguments": 2,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                }
+            ]
+        },
+        {
+            "file": "core/tool_generator.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 20,
+                    "end_line": 24,
+                    "length": 5,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "generate",
+                    "line": 26,
+                    "end_line": 80,
+                    "length": 55,
+                    "arguments": 2,
+                    "returns": 1,
+                    "ifs": 1,
+                    "loops": 1,
+                    "calls": 19
+                }
+            ]
+        },
+        {
+            "file": "core/tool_registry.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 18,
+                    "end_line": 20,
+                    "length": 3,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "register",
+                    "line": 22,
+                    "end_line": 29,
+                    "length": 8,
+                    "arguments": 4,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "get",
+                    "line": 31,
+                    "end_line": 33,
+                    "length": 3,
+                    "arguments": 2,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "has",
+                    "line": 35,
+                    "end_line": 37,
+                    "length": 3,
+                    "arguments": 2,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "list_tools",
+                    "line": 39,
+                    "end_line": 41,
+                    "length": 3,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "describe",
+                    "line": 43,
+                    "end_line": 58,
+                    "length": 16,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 1,
+                    "loops": 1,
+                    "calls": 8
+                }
+            ]
+        },
+        {
+            "file": "daemon/__init__.py",
+            "functions": []
+        },
+        {
+            "file": "daemon/config.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 48,
+                    "end_line": 49,
+                    "length": 2,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "load",
+                    "line": 51,
+                    "end_line": 61,
+                    "length": 11,
+                    "arguments": 1,
+                    "returns": 2,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 4
+                },
+                {
+                    "name": "save",
+                    "line": 63,
+                    "end_line": 75,
+                    "length": 13,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 3
+                },
+                {
+                    "name": "get",
+                    "line": 77,
+                    "end_line": 91,
+                    "length": 15,
+                    "arguments": 1,
+                    "returns": 3,
+                    "ifs": 2,
+                    "loops": 1,
+                    "calls": 2
+                },
+                {
+                    "name": "set",
+                    "line": 93,
+                    "end_line": 106,
+                    "length": 14,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 1,
+                    "loops": 1,
+                    "calls": 1
+                }
+            ]
+        },
+        {
+            "file": "daemon/daemon.py",
+            "functions": [
+                {
+                    "name": "main",
+                    "line": 23,
+                    "end_line": 89,
+                    "length": 67,
+                    "arguments": 0,
+                    "returns": 0,
+                    "ifs": 1,
+                    "loops": 2,
+                    "calls": 30
+                }
+            ]
+        },
+        {
+            "file": "daemon/event_bus.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 19,
+                    "end_line": 23,
+                    "length": 5,
+                    "arguments": 3,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "__str__",
+                    "line": 25,
+                    "end_line": 27,
+                    "length": 3,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "__init__",
+                    "line": 32,
+                    "end_line": 35,
+                    "length": 4,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "subscribe",
+                    "line": 37,
+                    "end_line": 41,
+                    "length": 5,
+                    "arguments": 3,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "unsubscribe",
+                    "line": 43,
+                    "end_line": 46,
+                    "length": 4,
+                    "arguments": 3,
+                    "returns": 0,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "publish",
+                    "line": 48,
+                    "end_line": 64,
+                    "length": 17,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 1,
+                    "calls": 6
+                },
+                {
+                    "name": "listener_count",
+                    "line": 66,
+                    "end_line": 71,
+                    "length": 6,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 3
+                },
+                {
+                    "name": "event_count",
+                    "line": 73,
+                    "end_line": 75,
+                    "length": 3,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "clear_history",
+                    "line": 77,
+                    "end_line": 79,
+                    "length": 3,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "dump_history",
+                    "line": 81,
+                    "end_line": 91,
+                    "length": 11,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 1,
+                    "calls": 3
+                },
+                {
+                    "name": "curiosity",
+                    "line": 105,
+                    "end_line": 110,
+                    "length": 6,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "journal",
+                    "line": 112,
+                    "end_line": 117,
+                    "length": 6,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                }
+            ]
+        },
+        {
+            "file": "daemon/heartbeat.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 18,
+                    "end_line": 24,
+                    "length": 7,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "tick",
+                    "line": 26,
+                    "end_line": 28,
+                    "length": 3,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "event",
+                    "line": 30,
+                    "end_line": 32,
+                    "length": 3,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "research",
+                    "line": 34,
+                    "end_line": 36,
+                    "length": 3,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "reflection",
+                    "line": 38,
+                    "end_line": 40,
+                    "length": 3,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "uptime",
+                    "line": 42,
+                    "end_line": 44,
+                    "length": 3,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "report",
+                    "line": 46,
+                    "end_line": 80,
+                    "length": 35,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 11
+                }
+            ]
+        },
+        {
+            "file": "daemon/mission_manager.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 17,
+                    "end_line": 24,
+                    "length": 8,
+                    "arguments": 3,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "advance",
+                    "line": 26,
+                    "end_line": 35,
+                    "length": 10,
+                    "arguments": 2,
+                    "returns": 1,
+                    "ifs": 2,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "add_questions",
+                    "line": 37,
+                    "end_line": 39,
+                    "length": 3,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "answer_question",
+                    "line": 41,
+                    "end_line": 44,
+                    "length": 4,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "status",
+                    "line": 46,
+                    "end_line": 56,
+                    "length": 11,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "__init__",
+                    "line": 61,
+                    "end_line": 63,
+                    "length": 3,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "add",
+                    "line": 65,
+                    "end_line": 69,
+                    "length": 5,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "list",
+                    "line": 71,
+                    "end_line": 88,
+                    "length": 18,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 1,
+                    "loops": 1,
+                    "calls": 9
+                },
+                {
+                    "name": "active",
+                    "line": 90,
+                    "end_line": 95,
+                    "length": 6,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "next_mission",
+                    "line": 97,
+                    "end_line": 111,
+                    "length": 15,
+                    "arguments": 1,
+                    "returns": 2,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 2
+                }
+            ]
+        },
+        {
+            "file": "daemon/plugin_loader.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 33,
+                    "end_line": 35,
+                    "length": 3,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "discover",
+                    "line": 37,
+                    "end_line": 94,
+                    "length": 58,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 2,
+                    "loops": 1,
+                    "calls": 15
+                },
+                {
+                    "name": "list_plugins",
+                    "line": 96,
+                    "end_line": 107,
+                    "length": 12,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 1,
+                    "loops": 1,
+                    "calls": 4
+                }
+            ]
+        },
+        {
+            "file": "daemon/runtime.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 25,
+                    "end_line": 48,
+                    "length": 24,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 12
+                },
+                {
+                    "name": "summary",
+                    "line": 50,
+                    "end_line": 64,
+                    "length": 15,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 11
+                }
+            ]
+        },
+        {
+            "file": "daemon/scheduler.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 18,
+                    "end_line": 24,
+                    "length": 7,
+                    "arguments": 4,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "ready",
+                    "line": 26,
+                    "end_line": 28,
+                    "length": 3,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "run",
+                    "line": 30,
+                    "end_line": 39,
+                    "length": 10,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 3
+                },
+                {
+                    "name": "__init__",
+                    "line": 44,
+                    "end_line": 46,
+                    "length": 3,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "add_task",
+                    "line": 48,
+                    "end_line": 60,
+                    "length": 13,
+                    "arguments": 4,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 3
+                },
+                {
+                    "name": "tick",
+                    "line": 62,
+                    "end_line": 68,
+                    "length": 7,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 1,
+                    "loops": 1,
+                    "calls": 2
+                },
+                {
+                    "name": "task_count",
+                    "line": 70,
+                    "end_line": 72,
+                    "length": 3,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "list_tasks",
+                    "line": 74,
+                    "end_line": 84,
+                    "length": 11,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 1,
+                    "calls": 2
+                },
+                {
+                    "name": "curiosity",
+                    "line": 95,
+                    "end_line": 100,
+                    "length": 6,
+                    "arguments": 0,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 3
+                },
+                {
+                    "name": "reflection",
+                    "line": 102,
+                    "end_line": 107,
+                    "length": 6,
+                    "arguments": 0,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 3
+                }
+            ]
+        },
+        {
+            "file": "daemon/service_manager.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 17,
+                    "end_line": 21,
+                    "length": 5,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "start",
+                    "line": 23,
+                    "end_line": 31,
+                    "length": 9,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "stop",
+                    "line": 33,
+                    "end_line": 40,
+                    "length": 8,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "heartbeat",
+                    "line": 42,
+                    "end_line": 45,
+                    "length": 4,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "__init__",
+                    "line": 50,
+                    "end_line": 52,
+                    "length": 3,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "register",
+                    "line": 54,
+                    "end_line": 58,
+                    "length": 5,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "start_all",
+                    "line": 60,
+                    "end_line": 65,
+                    "length": 6,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 1,
+                    "calls": 3
+                },
+                {
+                    "name": "stop_all",
+                    "line": 67,
+                    "end_line": 72,
+                    "length": 6,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 1,
+                    "calls": 3
+                },
+                {
+                    "name": "heartbeat",
+                    "line": 74,
+                    "end_line": 77,
+                    "length": 4,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 1,
+                    "calls": 2
+                },
+                {
+                    "name": "status",
+                    "line": 79,
+                    "end_line": 89,
+                    "length": 11,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 1,
+                    "calls": 3
+                }
+            ]
+        },
+        {
+            "file": "daemon/task_registry.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 17,
+                    "end_line": 23,
+                    "length": 7,
+                    "arguments": 4,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "due",
+                    "line": 25,
+                    "end_line": 27,
+                    "length": 3,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "execute",
+                    "line": 29,
+                    "end_line": 41,
+                    "length": 13,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 4
+                },
+                {
+                    "name": "__init__",
+                    "line": 46,
+                    "end_line": 48,
+                    "length": 3,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "register",
+                    "line": 50,
+                    "end_line": 62,
+                    "length": 13,
+                    "arguments": 4,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 3
+                },
+                {
+                    "name": "tick",
+                    "line": 64,
+                    "end_line": 70,
+                    "length": 7,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 1,
+                    "loops": 1,
+                    "calls": 2
+                },
+                {
+                    "name": "status",
+                    "line": 72,
+                    "end_line": 86,
+                    "length": 15,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 1,
+                    "loops": 1,
+                    "calls": 3
+                },
+                {
+                    "name": "curiosity",
+                    "line": 97,
+                    "end_line": 99,
+                    "length": 3,
+                    "arguments": 0,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "reflection",
+                    "line": 101,
+                    "end_line": 103,
+                    "length": 3,
+                    "arguments": 0,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                }
+            ]
+        },
+        {
+            "file": "daemon/workspace_coordinator.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 18,
+                    "end_line": 21,
+                    "length": 4,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "submit",
+                    "line": 23,
+                    "end_line": 36,
+                    "length": 14,
+                    "arguments": 4,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 3
+                },
+                {
+                    "name": "has_work",
+                    "line": 38,
+                    "end_line": 40,
+                    "length": 3,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "next_task",
+                    "line": 42,
+                    "end_line": 51,
+                    "length": 10,
+                    "arguments": 1,
+                    "returns": 2,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "pending",
+                    "line": 53,
+                    "end_line": 55,
+                    "length": 3,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "processed",
+                    "line": 57,
+                    "end_line": 59,
+                    "length": 3,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "status",
+                    "line": 61,
+                    "end_line": 73,
+                    "length": 13,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 5
+                }
+            ]
+        },
+        {
+            "file": "generated_tools/pdfreader.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 8,
+                    "end_line": 9,
+                    "length": 2,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "load",
+                    "line": 11,
+                    "end_line": 13,
+                    "length": 3,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "extract_text",
+                    "line": 15,
+                    "end_line": 17,
+                    "length": 3,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "search",
+                    "line": 19,
+                    "end_line": 21,
+                    "length": 3,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                }
+            ]
+        },
+        {
+            "file": "main.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 40,
+                    "end_line": 84,
+                    "length": 45,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 1,
+                    "calls": 29
+                },
+                {
+                    "name": "ask",
+                    "line": 86,
+                    "end_line": 152,
+                    "length": 67,
+                    "arguments": 2,
+                    "returns": 8,
+                    "ifs": 8,
+                    "loops": 0,
+                    "calls": 24
+                },
+                {
+                    "name": "shutdown",
+                    "line": 154,
+                    "end_line": 163,
+                    "length": 10,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 3
+                },
+                {
+                    "name": "main",
+                    "line": 166,
+                    "end_line": 193,
+                    "length": 28,
+                    "arguments": 0,
+                    "returns": 0,
+                    "ifs": 2,
+                    "loops": 1,
+                    "calls": 9
+                }
+            ]
+        },
+        {
+            "file": "memory/__init__.py",
+            "functions": []
+        },
+        {
+            "file": "memory/conversation_memory.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 27,
+                    "end_line": 39,
+                    "length": 13,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 3
+                },
+                {
+                    "name": "load",
+                    "line": 42,
+                    "end_line": 54,
+                    "length": 13,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 3
+                },
+                {
+                    "name": "save",
+                    "line": 57,
+                    "end_line": 69,
+                    "length": 13,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "remember",
+                    "line": 72,
+                    "end_line": 86,
+                    "length": 15,
+                    "arguments": 3,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 4
+                },
+                {
+                    "name": "recent",
+                    "line": 89,
+                    "end_line": 92,
+                    "length": 4,
+                    "arguments": 2,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "context",
+                    "line": 95,
+                    "end_line": 108,
+                    "length": 14,
+                    "arguments": 2,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 1,
+                    "calls": 3
+                },
+                {
+                    "name": "clear",
+                    "line": 111,
+                    "end_line": 115,
+                    "length": 5,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "stats",
+                    "line": 118,
+                    "end_line": 124,
+                    "length": 7,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                }
+            ]
+        },
+        {
+            "file": "memory/episodic_memory.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 33,
+                    "end_line": 45,
+                    "length": 13,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 3
+                },
+                {
+                    "name": "load",
+                    "line": 48,
+                    "end_line": 60,
+                    "length": 13,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 3
+                },
+                {
+                    "name": "save",
+                    "line": 63,
+                    "end_line": 71,
+                    "length": 9,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "remember",
+                    "line": 74,
+                    "end_line": 116,
+                    "length": 43,
+                    "arguments": 7,
+                    "returns": 1,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 4
+                },
+                {
+                    "name": "recent",
+                    "line": 119,
+                    "end_line": 121,
+                    "length": 3,
+                    "arguments": 2,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "search",
+                    "line": 124,
+                    "end_line": 138,
+                    "length": 15,
+                    "arguments": 2,
+                    "returns": 1,
+                    "ifs": 1,
+                    "loops": 1,
+                    "calls": 4
+                },
+                {
+                    "name": "summary",
+                    "line": 141,
+                    "end_line": 172,
+                    "length": 32,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 1,
+                    "calls": 5
+                }
+            ]
+        },
+        {
+            "file": "memory/knowledge_graph.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 30,
+                    "end_line": 48,
+                    "length": 19,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 3
+                },
+                {
+                    "name": "load",
+                    "line": 51,
+                    "end_line": 63,
+                    "length": 13,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 3
+                },
+                {
+                    "name": "save",
+                    "line": 66,
+                    "end_line": 78,
+                    "length": 13,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "add_entity",
+                    "line": 81,
+                    "end_line": 105,
+                    "length": 25,
+                    "arguments": 3,
+                    "returns": 0,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "add_relationship",
+                    "line": 108,
+                    "end_line": 130,
+                    "length": 23,
+                    "arguments": 4,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "summary",
+                    "line": 133,
+                    "end_line": 145,
+                    "length": 13,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                }
+            ]
+        },
+        {
+            "file": "memory/working_memory.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 13,
+                    "end_line": 14,
+                    "length": 2,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "add",
+                    "line": 16,
+                    "end_line": 20,
+                    "length": 5,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "recall",
+                    "line": 22,
+                    "end_line": 23,
+                    "length": 2,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "clear",
+                    "line": 25,
+                    "end_line": 26,
+                    "length": 2,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "update",
+                    "line": 28,
+                    "end_line": 29,
+                    "length": 2,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                }
+            ]
+        },
+        {
+            "file": "plugins/__init__.py",
+            "functions": []
+        },
+        {
+            "file": "plugins/demo_plugin.py",
+            "functions": [
+                {
+                    "name": "initialize",
+                    "line": 3,
+                    "end_line": 4,
+                    "length": 2,
+                    "arguments": 0,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                }
+            ]
+        },
+        {
+            "file": "plugins/groq_engine.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 7,
+                    "end_line": 12,
+                    "length": 6,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 3
+                },
+                {
+                    "name": "ask",
+                    "line": 14,
+                    "end_line": 22,
+                    "length": 9,
+                    "arguments": 3,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                }
+            ]
+        },
+        {
+            "file": "self_evolution/autonomous_drive.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 36,
+                    "end_line": 76,
+                    "length": 41,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 7
+                },
+                {
+                    "name": "observe",
+                    "line": 78,
+                    "end_line": 87,
+                    "length": 10,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 14
+                },
+                {
+                    "name": "evaluate",
+                    "line": 89,
+                    "end_line": 108,
+                    "length": 20,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 2,
+                    "loops": 1,
+                    "calls": 2
+                },
+                {
+                    "name": "propose",
+                    "line": 110,
+                    "end_line": 128,
+                    "length": 19,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 1,
+                    "calls": 3
+                },
+                {
+                    "name": "save",
+                    "line": 130,
+                    "end_line": 142,
+                    "length": 13,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 6
+                },
+                {
+                    "name": "main",
+                    "line": 145,
+                    "end_line": 164,
+                    "length": 20,
+                    "arguments": 0,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 1,
+                    "calls": 9
+                }
+            ]
+        },
+        {
+            "file": "self_evolution/goal_manager.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 40,
+                    "end_line": 41,
+                    "length": 2,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "load_plan",
+                    "line": 43,
+                    "end_line": 46,
+                    "length": 4,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "choose_goal",
+                    "line": 48,
+                    "end_line": 74,
+                    "length": 27,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 3
+                },
+                {
+                    "name": "save",
+                    "line": 76,
+                    "end_line": 94,
+                    "length": 19,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 4
+                },
+                {
+                    "name": "main",
+                    "line": 97,
+                    "end_line": 135,
+                    "length": 39,
+                    "arguments": 0,
+                    "returns": 1,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 27
+                }
+            ]
+        },
+        {
+            "file": "self_evolution/improvement_planner.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 31,
+                    "end_line": 32,
+                    "length": 2,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "load_json",
+                    "line": 34,
+                    "end_line": 40,
+                    "length": 7,
+                    "arguments": 2,
+                    "returns": 1,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 4
+                },
+                {
+                    "name": "confidence",
+                    "line": 42,
+                    "end_line": 53,
+                    "length": 12,
+                    "arguments": 2,
+                    "returns": 5,
+                    "ifs": 4,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "risk",
+                    "line": 55,
+                    "end_line": 65,
+                    "length": 11,
+                    "arguments": 2,
+                    "returns": 3,
+                    "ifs": 2,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "effort",
+                    "line": 67,
+                    "end_line": 77,
+                    "length": 11,
+                    "arguments": 2,
+                    "returns": 3,
+                    "ifs": 2,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "affected_modules",
+                    "line": 79,
+                    "end_line": 92,
+                    "length": 14,
+                    "arguments": 3,
+                    "returns": 1,
+                    "ifs": 1,
+                    "loops": 1,
+                    "calls": 7
+                },
+                {
+                    "name": "plan",
+                    "line": 94,
+                    "end_line": 152,
+                    "length": 59,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 1,
+                    "calls": 10
+                },
+                {
+                    "name": "save",
+                    "line": 154,
+                    "end_line": 175,
+                    "length": 22,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 4
+                },
+                {
+                    "name": "main",
+                    "line": 178,
+                    "end_line": 239,
+                    "length": 62,
+                    "arguments": 0,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 1,
+                    "calls": 25
+                }
+            ]
+        },
+        {
+            "file": "self_evolution/introspection.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 19,
+                    "end_line": 21,
+                    "length": 3,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "visit_FunctionDef",
+                    "line": 23,
+                    "end_line": 30,
+                    "length": 8,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 3
+                },
+                {
+                    "name": "visit_AsyncFunctionDef",
+                    "line": 32,
+                    "end_line": 39,
+                    "length": 8,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 3
+                },
+                {
+                    "name": "visit_ClassDef",
+                    "line": 41,
+                    "end_line": 43,
+                    "length": 3,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "__init__",
+                    "line": 48,
+                    "end_line": 53,
+                    "length": 6,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "scan_file",
+                    "line": 55,
+                    "end_line": 99,
+                    "length": 45,
+                    "arguments": 2,
+                    "returns": 2,
+                    "ifs": 2,
+                    "loops": 1,
+                    "calls": 11
+                },
+                {
+                    "name": "run",
+                    "line": 101,
+                    "end_line": 135,
+                    "length": 35,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 1,
+                    "loops": 1,
+                    "calls": 13
+                },
+                {
+                    "name": "save",
+                    "line": 137,
+                    "end_line": 146,
+                    "length": 10,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 3
+                },
+                {
+                    "name": "main",
+                    "line": 149,
+                    "end_line": 167,
+                    "length": 19,
+                    "arguments": 0,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 1,
+                    "calls": 13
+                }
+            ]
+        },
+        {
+            "file": "self_evolution/opportunity_analyzer.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 19,
+                    "end_line": 20,
+                    "length": 2,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "add",
+                    "line": 22,
+                    "end_line": 30,
+                    "length": 9,
+                    "arguments": 5,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "analyze",
+                    "line": 32,
+                    "end_line": 100,
+                    "length": 69,
+                    "arguments": 2,
+                    "returns": 1,
+                    "ifs": 6,
+                    "loops": 2,
+                    "calls": 17
+                },
+                {
+                    "name": "main",
+                    "line": 103,
+                    "end_line": 147,
+                    "length": 45,
+                    "arguments": 0,
+                    "returns": 1,
+                    "ifs": 1,
+                    "loops": 1,
+                    "calls": 26
+                }
+            ]
+        },
+        {
+            "file": "self_evolution/project_knowledge_graph.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 30,
+                    "end_line": 33,
+                    "length": 4,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "visit_Import",
+                    "line": 35,
+                    "end_line": 38,
+                    "length": 4,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 1,
+                    "calls": 2
+                },
+                {
+                    "name": "visit_ImportFrom",
+                    "line": 40,
+                    "end_line": 43,
+                    "length": 4,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "visit_ClassDef",
+                    "line": 45,
+                    "end_line": 47,
+                    "length": 3,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "visit_FunctionDef",
+                    "line": 49,
+                    "end_line": 51,
+                    "length": 3,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "visit_AsyncFunctionDef",
+                    "line": 53,
+                    "end_line": 55,
+                    "length": 3,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "__init__",
+                    "line": 60,
+                    "end_line": 65,
+                    "length": 6,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "analyze",
+                    "line": 67,
+                    "end_line": 93,
+                    "length": 27,
+                    "arguments": 2,
+                    "returns": 2,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 11
+                },
+                {
+                    "name": "build",
+                    "line": 95,
+                    "end_line": 123,
+                    "length": 29,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 1,
+                    "loops": 1,
+                    "calls": 13
+                },
+                {
+                    "name": "save",
+                    "line": 125,
+                    "end_line": 132,
+                    "length": 8,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 3
+                },
+                {
+                    "name": "main",
+                    "line": 135,
+                    "end_line": 153,
+                    "length": 19,
+                    "arguments": 0,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 1,
+                    "calls": 13
+                }
+            ]
+        },
+        {
+            "file": "self_evolution/source_analyzer.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 27,
+                    "end_line": 28,
+                    "length": 2,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "visit_FunctionDef",
+                    "line": 30,
+                    "end_line": 58,
+                    "length": 29,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 16
+                },
+                {
+                    "name": "__init__",
+                    "line": 63,
+                    "end_line": 69,
+                    "length": 7,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "analyze_file",
+                    "line": 71,
+                    "end_line": 96,
+                    "length": 26,
+                    "arguments": 2,
+                    "returns": 2,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 7
+                },
+                {
+                    "name": "run",
+                    "line": 98,
+                    "end_line": 133,
+                    "length": 36,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 2,
+                    "loops": 2,
+                    "calls": 8
+                },
+                {
+                    "name": "save",
+                    "line": 135,
+                    "end_line": 151,
+                    "length": 17,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 3
+                },
+                {
+                    "name": "main",
+                    "line": 154,
+                    "end_line": 194,
+                    "length": 41,
+                    "arguments": 0,
+                    "returns": 1,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 20
+                }
+            ]
+        },
+        {
+            "file": "self_evolution/work_order_generator.py",
+            "functions": [
+                {
+                    "name": "load_goal",
+                    "line": 26,
+                    "end_line": 29,
+                    "length": 4,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 2
+                },
+                {
+                    "name": "create",
+                    "line": 31,
+                    "end_line": 113,
+                    "length": 83,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 3
+                },
+                {
+                    "name": "save",
+                    "line": 115,
+                    "end_line": 131,
+                    "length": 17,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 3
+                },
+                {
+                    "name": "main",
+                    "line": 134,
+                    "end_line": 169,
+                    "length": 36,
+                    "arguments": 0,
+                    "returns": 1,
+                    "ifs": 1,
+                    "loops": 1,
+                    "calls": 22
+                }
+            ]
+        },
+        {
+            "file": "sensors/camera_module.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 27,
+                    "end_line": 44,
+                    "length": 18,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 4
+                },
+                {
+                    "name": "capture",
+                    "line": 47,
+                    "end_line": 101,
+                    "length": 55,
+                    "arguments": 2,
+                    "returns": 2,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 10
+                }
+            ]
+        },
+        {
+            "file": "sensors/camera_module_backup.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 27,
+                    "end_line": 38,
+                    "length": 12,
+                    "arguments": 2,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 3
+                },
+                {
+                    "name": "capture",
+                    "line": 41,
+                    "end_line": 102,
+                    "length": 62,
+                    "arguments": 2,
+                    "returns": 2,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 10
+                }
+            ]
+        },
+        {
+            "file": "sensors/sensor_manager.py",
+            "functions": [
+                {
+                    "name": "__init__",
+                    "line": 26,
+                    "end_line": 30,
+                    "length": 5,
+                    "arguments": 1,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "register_sensor",
+                    "line": 33,
+                    "end_line": 48,
+                    "length": 16,
+                    "arguments": 3,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "enable_sensor",
+                    "line": 51,
+                    "end_line": 63,
+                    "length": 13,
+                    "arguments": 2,
+                    "returns": 2,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 1
+                },
+                {
+                    "name": "disable_sensor",
+                    "line": 66,
+                    "end_line": 74,
+                    "length": 9,
+                    "arguments": 2,
+                    "returns": 2,
+                    "ifs": 1,
+                    "loops": 0,
+                    "calls": 0
+                },
+                {
+                    "name": "publish_event",
+                    "line": 77,
+                    "end_line": 94,
+                    "length": 18,
+                    "arguments": 3,
+                    "returns": 0,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 4
+                },
+                {
+                    "name": "status",
+                    "line": 97,
+                    "end_line": 107,
+                    "length": 11,
+                    "arguments": 1,
+                    "returns": 1,
+                    "ifs": 0,
+                    "loops": 0,
+                    "calls": 3
+                }
+            ]
+        }
+    ],
+    "summary": {
+        "python_files": 95,
+        "functions": 425,
+        "long_functions": 6
+    }
+}

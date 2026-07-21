@@ -2,7 +2,7 @@
   "entities": {
     "Nikola Tesla": {
       "type": "person",
-      "mentions": 2
+      "mentions": 3
     },
     "Alternating Current": {
       "type": "technology",
@@ -30,35 +30,35 @@
     },
     "Nikola": {
       "type": "concept",
-      "mentions": 2
+      "mentions": 3
     },
     "Tesla": {
       "type": "concept",
-      "mentions": 2
+      "mentions": 3
     },
     "Tower": {
       "type": "concept",
-      "mentions": 2
+      "mentions": 3
     },
     "Wardenclyffe": {
       "type": "concept",
-      "mentions": 2
+      "mentions": 3
     },
     "Research:Nikola Tesla": {
       "type": "research",
-      "mentions": 1
+      "mentions": 2
     },
     "Coil": {
       "type": "concept",
-      "mentions": 1
+      "mentions": 2
     },
     "Tesla Coil": {
       "type": "concept",
-      "mentions": 1
+      "mentions": 2
     },
     "Wardenclyffe Tower": {
       "type": "concept",
-      "mentions": 1
+      "mentions": 2
     },
     "Research:Alternating Current": {
       "type": "research",
@@ -154,6 +154,46 @@
       "source": "Research:Alternating Current",
       "relation": "mentions",
       "target": "Alternating"
+    },
+    {
+      "source": "Research:Nikola Tesla",
+      "relation": "mentions",
+      "target": "Coil"
+    },
+    {
+      "source": "Research:Nikola Tesla",
+      "relation": "mentions",
+      "target": "Nikola"
+    },
+    {
+      "source": "Research:Nikola Tesla",
+      "relation": "mentions",
+      "target": "Nikola Tesla"
+    },
+    {
+      "source": "Research:Nikola Tesla",
+      "relation": "mentions",
+      "target": "Tesla"
+    },
+    {
+      "source": "Research:Nikola Tesla",
+      "relation": "mentions",
+      "target": "Tesla Coil"
+    },
+    {
+      "source": "Research:Nikola Tesla",
+      "relation": "mentions",
+      "target": "Tower"
+    },
+    {
+      "source": "Research:Nikola Tesla",
+      "relation": "mentions",
+      "target": "Wardenclyffe"
+    },
+    {
+      "source": "Research:Nikola Tesla",
+      "relation": "mentions",
+      "target": "Wardenclyffe Tower"
     }
   ]
 }

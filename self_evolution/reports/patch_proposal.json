@@ -1,0 +1,61 @@
+{
+    "generated": "2026-07-21T12:47:42.057785+00:00",
+    "proposal_status": "DRAFT",
+    "engineering_goal": "Consider refactoring run",
+    "reason": "103 line function in cognition/learning_cycle.py",
+    "priority": 99,
+    "confidence": 0.97,
+    "risk": "Medium",
+    "estimated_effort": "Large",
+    "summary": {
+        "python_files": 95,
+        "functions": 425,
+        "long_functions": 6
+    },
+    "recommended_strategy": [
+        "Understand current implementation",
+        "Preserve external behavior",
+        "Reduce complexity",
+        "Improve readability",
+        "Increase maintainability",
+        "Run regression tests",
+        "Compare benchmarks"
+    ],
+    "candidate_actions": [
+        {
+            "step": 1,
+            "action": "Analyze target function"
+        },
+        {
+            "step": 2,
+            "action": "Design cleaner implementation"
+        },
+        {
+            "step": 3,
+            "action": "Generate candidate patch"
+        },
+        {
+            "step": 4,
+            "action": "Run automated tests"
+        },
+        {
+            "step": 5,
+            "action": "Benchmark changes"
+        },
+        {
+            "step": 6,
+            "action": "Prepare pull request"
+        }
+    ],
+    "pull_request": {
+        "title": "Consider refactoring run",
+        "body": "\n## Summary\n\nThis pull request was generated as a proposal\nby Nova X.\n\nNo code has been modified automatically.\n\nReason:\n\n103 line function in cognition/learning_cycle.py\n\nConfidence: 0.97\n\nRisk: Medium\n\nHuman review is required before any source\ncode is changed.\n"
+    },
+    "permissions": {
+        "modify_source": false,
+        "commit": false,
+        "push": false,
+        "merge": false,
+        "human_review_required": true
+    }
+}
