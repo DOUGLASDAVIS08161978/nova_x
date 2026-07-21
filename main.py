@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 ===========================================================
-NOVA-X Boot Kernel v1.2
+NOVA-X Boot Kernel v1.3
 ===========================================================
 
 Boots the NOVA-X cognitive architecture.
@@ -13,6 +13,7 @@ Current Modules:
 - Identity Core
 - Plugin Manager
 - Reasoning Manager
+- Living Cycle Daemon
 - Dynamic Capability Router
 
 ===========================================================
@@ -26,8 +27,8 @@ from core.global_workspace import GlobalWorkspace
 from cognition.identity_core import IdentityCore
 from core.plugin_manager import PluginManager
 from core.reasoning_manager import ReasoningManager
+from core.living_cycle_daemon import LivingCycleDaemon
 
-# NEW
 from core.capability_router import (
     is_capability_question,
     capability_response,
@@ -63,6 +64,10 @@ class NovaX:
         print("[BOOT] Reasoning Manager...")
         self.reasoning = ReasoningManager()
 
+        print("[BOOT] Living Cycle Daemon...")
+        self.living_cycle = LivingCycleDaemon()
+        self.living_cycle.start()
+
         print()
         print("=" * 55)
         print("NOVA-X INITIALIZATION COMPLETE")
@@ -87,7 +92,6 @@ class NovaX:
         # =====================================================
 
         if is_capability_question(prompt):
-
             print(capability_response())
             return
 
@@ -147,6 +151,17 @@ class NovaX:
             print("\nRuntime Error:")
             print(type(e).__name__, "-", e)
 
+    def shutdown(self):
+        """Gracefully stop background services."""
+        print("\nShutting down NOVA-X...")
+
+        try:
+            self.living_cycle.stop()
+        except Exception:
+            pass
+
+        print("Shutdown complete.")
+
 
 def main():
 
@@ -163,6 +178,7 @@ def main():
                 "exit",
                 "bye",
             ):
+                nova.shutdown()
                 print("\nGoodbye.")
                 break
 
@@ -173,9 +189,9 @@ def main():
 
         except KeyboardInterrupt:
             print("\nInterrupted.")
+            nova.shutdown()
             break
 
 
 if __name__ == "__main__":
     main()
-

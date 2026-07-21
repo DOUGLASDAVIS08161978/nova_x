@@ -1,0 +1,102 @@
+{
+    "generated": "2026-07-21T05:14:56.828109",
+    "count": 12,
+    "items": [
+        {
+            "title": "Consider refactoring run",
+            "priority": 99,
+            "category": "Complexity",
+            "evidence": "103 line function in cognition/learning_cycle.py",
+            "status": "proposed",
+            "human_review": true
+        },
+        {
+            "title": "Consider refactoring create_pull_request",
+            "priority": 99,
+            "category": "Complexity",
+            "evidence": "108 line function in core/pull_request_manager.py",
+            "status": "proposed",
+            "human_review": true
+        },
+        {
+            "title": "Consider refactoring reason",
+            "priority": 99,
+            "category": "Complexity",
+            "evidence": "107 line function in core/reasoning_manager.py",
+            "status": "proposed",
+            "human_review": true
+        },
+        {
+            "title": "Resolve FIXME items",
+            "priority": 95,
+            "category": "Reliability",
+            "evidence": "13 FIXME markers detected.",
+            "status": "proposed",
+            "human_review": true
+        },
+        {
+            "title": "Resolve TODO items",
+            "priority": 90,
+            "category": "Maintenance",
+            "evidence": "13 TODO markers detected.",
+            "status": "proposed",
+            "human_review": true
+        },
+        {
+            "title": "Consider refactoring build_context",
+            "priority": 81,
+            "category": "Complexity",
+            "evidence": "81 line function in cognition/knowledge_context.py",
+            "status": "proposed",
+            "human_review": true
+        },
+        {
+            "title": "Refactor long functions",
+            "priority": 80,
+            "category": "Refactoring",
+            "evidence": "5 functions exceed 75 lines.",
+            "status": "proposed",
+            "human_review": true
+        },
+        {
+            "title": "Consider refactoring route",
+            "priority": 80,
+            "category": "Complexity",
+            "evidence": "80 line function in core/executive_router.py",
+            "status": "proposed",
+            "human_review": true
+        },
+        {
+            "title": "Review FIXMEs in self_evolution/introspection.py",
+            "priority": 75,
+            "category": "Reliability",
+            "evidence": "7 FIXME entries.",
+            "status": "proposed",
+            "human_review": true
+        },
+        {
+            "title": "Review FIXMEs in self_evolution/opportunity_analyzer.py",
+            "priority": 75,
+            "category": "Reliability",
+            "evidence": "6 FIXME entries.",
+            "status": "proposed",
+            "human_review": true
+        },
+        {
+            "title": "Review TODOs in self_evolution/introspection.py",
+            "priority": 60,
+            "category": "Maintenance",
+            "evidence": "7 TODO entries.",
+            "status": "proposed",
+            "human_review": true
+        },
+        {
+            "title": "Review TODOs in self_evolution/opportunity_analyzer.py",
+            "priority": 60,
+            "category": "Maintenance",
+            "evidence": "6 TODO entries.",
+            "status": "proposed",
+            "human_review": true
+        }
+    ]
+}

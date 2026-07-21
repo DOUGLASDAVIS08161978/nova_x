@@ -24,6 +24,15 @@ CAPABILITY_KEYWORDS = [
 
 
 def is_capability_question(text):
+"""
+Auto-generated docstring for is_capability_question.
+"""
+"""
+Auto-generated docstring for is_capability_question.
+"""
+"""
+Auto-generated docstring for is_capability_question.
+"""
 
     text = text.lower()
 
@@ -31,6 +40,15 @@ def is_capability_question(text):
 
 
 def capability_response():
+"""
+Auto-generated docstring for capability_response.
+"""
+"""
+Auto-generated docstring for capability_response.
+"""
+"""
+Auto-generated docstring for capability_response.
+"""
 
     reporter = SelfCapabilityReporter()
 

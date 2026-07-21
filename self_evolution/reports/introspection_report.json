@@ -1,0 +1,763 @@
+{
+    "timestamp": "2026-07-21T05:14:46.564209",
+    "files": [
+        {
+            "file": "cognition/__init__.py",
+            "functions": 0,
+            "classes": 0,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "cognition/cognitive_cycle.py",
+            "functions": 7,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "cognition/consistency_checker.py",
+            "functions": 3,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "cognition/curiosity_engine.py",
+            "functions": 2,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "cognition/decision_engine.py",
+            "functions": 3,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "cognition/executor.py",
+            "functions": 2,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "cognition/goal_manager.py",
+            "functions": 7,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "cognition/identity_context.py",
+            "functions": 3,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "cognition/identity_core.py",
+            "functions": 6,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "cognition/knowledge_context.py",
+            "functions": 2,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": [
+                {
+                    "name": "build_context",
+                    "line": 29,
+                    "length": 81
+                }
+            ]
+        },
+        {
+            "file": "cognition/knowledge_query_engine.py",
+            "functions": 5,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "cognition/knowledge_store.py",
+            "functions": 2,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "cognition/learning_cycle.py",
+            "functions": 2,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": [
+                {
+                    "name": "run",
+                    "line": 39,
+                    "length": 103
+                }
+            ]
+        },
+        {
+            "file": "cognition/observation_engine.py",
+            "functions": 8,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "cognition/patch_generator.py",
+            "functions": 3,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "cognition/planner.py",
+            "functions": 3,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "cognition/reflection_engine.py",
+            "functions": 2,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "cognition/research_engine.py",
+            "functions": 2,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "cognition/research_knowledge_bridge.py",
+            "functions": 3,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "cognition/research_provider.py",
+            "functions": 4,
+            "classes": 3,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "cognition/self_improvement.py",
+            "functions": 4,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "cognition/vision_analyzer.py",
+            "functions": 4,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "cognition/vision_knowledge_bridge.py",
+            "functions": 3,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "cognition/workspace_bridge.py",
+            "functions": 3,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "core/__init__.py",
+            "functions": 0,
+            "classes": 0,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "core/action_planner.py",
+            "functions": 3,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "core/android_agent.py",
+            "functions": 6,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "core/capability_analyzer.py",
+            "functions": 3,
+            "classes": 2,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "core/capability_registry.py",
+            "functions": 8,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "core/capability_router.py",
+            "functions": 2,
+            "classes": 0,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "core/code_executor.py",
+            "functions": 2,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "core/cognitive_orchestrator.py",
+            "functions": 7,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "core/event_bus.py",
+            "functions": 6,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "core/execution_history.py",
+            "functions": 5,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "core/execution_pipeline.py",
+            "functions": 2,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "core/executive_controller.py",
+            "functions": 2,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "core/executive_router.py",
+            "functions": 2,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": [
+                {
+                    "name": "route",
+                    "line": 36,
+                    "length": 80
+                }
+            ]
+        },
+        {
+            "file": "core/experiment_engine.py",
+            "functions": 2,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "core/global_workspace.py",
+            "functions": 9,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "core/goal_planner.py",
+            "functions": 4,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "core/hypothesis_engine.py",
+            "functions": 4,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "core/innovation_queue.py",
+            "functions": 6,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "core/living_cycle_daemon.py",
+            "functions": 7,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "core/module_base.py",
+            "functions": 5,
+            "classes": 2,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "core/module_registry.py",
+            "functions": 7,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "core/pipeline_context.py",
+            "functions": 8,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "core/plugin_manager.py",
+            "functions": 4,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "core/pull_request_manager.py",
+            "functions": 3,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": [
+                {
+                    "name": "create_pull_request",
+                    "line": 41,
+                    "length": 108
+                }
+            ]
+        },
+        {
+            "file": "core/rate_limit_manager.py",
+            "functions": 4,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "core/reasoning_manager.py",
+            "functions": 5,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": [
+                {
+                    "name": "reason",
+                    "line": 60,
+                    "length": 107
+                }
+            ]
+        },
+        {
+            "file": "core/reasoning_manager_backup.py",
+            "functions": 4,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "core/reflection_engine_v2.py",
+            "functions": 4,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "core/reflection_journal.py",
+            "functions": 6,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "core/repository_intelligence.py",
+            "functions": 5,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "core/self_capability_report.py",
+            "functions": 5,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "core/self_evaluation.py",
+            "functions": 1,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "core/startup_health_check.py",
+            "functions": 4,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "core/task_executor.py",
+            "functions": 5,
+            "classes": 2,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "core/task_planner.py",
+            "functions": 2,
+            "classes": 2,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "core/tool_architect.py",
+            "functions": 4,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "core/tool_generator.py",
+            "functions": 2,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "core/tool_registry.py",
+            "functions": 6,
+            "classes": 2,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "daemon/__init__.py",
+            "functions": 0,
+            "classes": 0,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "daemon/config.py",
+            "functions": 5,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "daemon/daemon.py",
+            "functions": 1,
+            "classes": 0,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "daemon/event_bus.py",
+            "functions": 12,
+            "classes": 2,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "daemon/heartbeat.py",
+            "functions": 7,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "daemon/mission_manager.py",
+            "functions": 10,
+            "classes": 2,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "daemon/plugin_loader.py",
+            "functions": 3,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "daemon/runtime.py",
+            "functions": 2,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "daemon/scheduler.py",
+            "functions": 10,
+            "classes": 2,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "daemon/service_manager.py",
+            "functions": 10,
+            "classes": 2,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "daemon/task_registry.py",
+            "functions": 9,
+            "classes": 2,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "daemon/workspace_coordinator.py",
+            "functions": 7,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "generated_tools/pdfreader.py",
+            "functions": 4,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "main.py",
+            "functions": 4,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "memory/__init__.py",
+            "functions": 0,
+            "classes": 0,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "memory/conversation_memory.py",
+            "functions": 8,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "memory/episodic_memory.py",
+            "functions": 7,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "memory/knowledge_graph.py",
+            "functions": 6,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "memory/working_memory.py",
+            "functions": 5,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "plugins/__init__.py",
+            "functions": 0,
+            "classes": 0,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "plugins/demo_plugin.py",
+            "functions": 1,
+            "classes": 0,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "plugins/groq_engine.py",
+            "functions": 2,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "self_evolution/autonomous_drive.py",
+            "functions": 6,
+            "classes": 2,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "self_evolution/introspection.py",
+            "functions": 9,
+            "classes": 2,
+            "todos": 7,
+            "fixmes": 7,
+            "long_functions": []
+        },
+        {
+            "file": "self_evolution/opportunity_analyzer.py",
+            "functions": 4,
+            "classes": 1,
+            "todos": 6,
+            "fixmes": 6,
+            "long_functions": []
+        },
+        {
+            "file": "sensors/camera_module.py",
+            "functions": 2,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "sensors/camera_module_backup.py",
+            "functions": 2,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        },
+        {
+            "file": "sensors/sensor_manager.py",
+            "functions": 6,
+            "classes": 1,
+            "todos": 0,
+            "fixmes": 0,
+            "long_functions": []
+        }
+    ],
+    "summary": {
+        "python_files": 90,
+        "functions": 389,
+        "classes": 96,
+        "todos": 13,
+        "fixmes": 13,
+        "long_functions": 5
+    }
+}
