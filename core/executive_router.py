@@ -113,4 +113,3 @@ class ExecutiveRouter:
                     return result[key]
 
         return str(result)
-
