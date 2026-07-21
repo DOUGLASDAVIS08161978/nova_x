@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-NOVA-X Patch Synthesis Engine v3.0 — Git + curl PR
+NOVA-X Patch Synthesis Engine v6.0 — with Groq Reasoning
 """
 
-import os, re, json, uuid, subprocess, tempfile, shutil
+import os, re, json, subprocess, requests
 from pathlib import Path
 from datetime import datetime, UTC
 from typing import List, Dict, Any, Optional
@@ -16,6 +16,7 @@ GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
 GITHUB_REPO  = os.environ.get("GITHUB_REPO", "")
 HEAD_BRANCH  = os.environ.get("GITHUB_BRANCH", "nova-x-auto-patch")
 BASE_BRANCH  = os.environ.get("GITHUB_BASE", "main")
+GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
 
 SCAN_DIRS    = ["cognition", "core", "modules", "utils", "scripts", "self_evolution"]
 FILE_EXT     = [".py"]
@@ -23,7 +24,35 @@ OUTPUT_DIR   = Path("data/patches")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 # ============================================================
-# SCANNER & ANALYZER (unchanged)
+# GROQ CLIENT
+# ============================================================
+
+class GroqClient:
+    def __init__(self, api_key: str):
+        self.api_key = api_key
+        self.url = "https://api.groq.com/openai/v1/chat/completions"
+
+    def chat(self, system: str, user: str, model: str = "llama-3.3-70b-versatile") -> str:
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json"
+        }
+        payload = {
+            "model": model,
+            "messages": [
+                {"role": "system", "content": system},
+                {"role": "user", "content": user}
+            ],
+            "temperature": 0.5,
+            "max_tokens": 2048
+        }
+        response = requests.post(self.url, json=payload, headers=headers, timeout=60)
+        response.raise_for_status()
+        data = response.json()
+        return data["choices"][0]["message"]["content"]
+
+# ============================================================
+# CODEBASE SCANNER (same as before)
 # ============================================================
 
 class CodebaseScanner:
@@ -46,6 +75,7 @@ class CodebaseScanner:
         with open(filepath, "r", encoding="utf-8", errors="ignore") as f:
             content = f.read()
         issues = []
+        # Simple static checks (same as before)
         if not re.search(r'^("""|\'\'\')', content, re.MULTILINE):
             issues.append({"type": "MISSING_MODULE_DOCSTRING", "line": 1})
         for match in re.finditer(r'^def\s+(\w+)\s*\(', content, re.MULTILINE):
@@ -86,13 +116,66 @@ class CodebaseScanner:
             total_issues += analysis["total_issues"]
         return {"timestamp": datetime.now(UTC).isoformat(), "total_files": len(self.files), "total_issues": total_issues, "files": results}
 
+# ============================================================
+# GROQ REASONING: Generate improvements
+# ============================================================
+
+class GroqImprover:
+    def __init__(self, api_key: str):
+        self.client = GroqClient(api_key)
+
+    def generate_improvements(self, analysis: Dict) -> Dict[str, str]:
+        """
+        Ask Groq to suggest improvements for each file with issues.
+        Returns dict: {filepath: new_code}
+        """
+        files_with_issues = [f for f in analysis["files"] if f["total_issues"] > 0]
+        if not files_with_issues:
+            return {}
+
+        # Build a prompt with file summaries
+        prompt_lines = []
+        for f in files_with_issues:
+            prompt_lines.append(f"File: {f['path']}")
+            prompt_lines.append("Issues:")
+            for issue in f["issues"]:
+                prompt_lines.append(f"  - {issue['type']}: {issue.get('function', '')} at line {issue.get('line', '')}")
+            prompt_lines.append("")
+        files_summary = "\n".join(prompt_lines)
+
+        system_prompt = (
+            "You are Nova-X, an AI reasoning engine. "
+            "You are given a list of Python files and the issues found in them. "
+            "For each file, propose concrete improvements that address the issues. "
+            "Return your answer as a JSON object where keys are file paths (relative to the project root) "
+            "and values are the new complete file content with the improvements applied. "
+            "Only include files that you have improved. "
+            "Make sure the code is correct and complete. "
+            "Do not add extra text outside the JSON."
+        )
+        user_prompt = f"Here are the files and their issues:\n\n{files_summary}"
+
+        try:
+            response_text = self.client.chat(system_prompt, user_prompt)
+            # Extract JSON
+            # Try to find a JSON block
+            match = re.search(r'\{.*\}', response_text, re.DOTALL)
+            if not match:
+                print("⚠️  Groq did not return valid JSON. Trying to parse anyway...")
+                return {}
+            data = json.loads(match.group(0))
+            return data
+        except Exception as e:
+            print(f"❌ Groq reasoning failed: {e}")
+            return {}
 
 # ============================================================
-# DIFF & PATCH APPLIER (modifies files in place)
+# PATCH APPLIER (uses Groq suggestions if available)
 # ============================================================
 
 class PatchApplier:
-    def __init__(self):
+    def __init__(self, groq_improvements: Dict[str, str] = None):
+        self.groq_improvements = groq_improvements or {}
         self.transformations = {
             "MISSING_MODULE_DOCSTRING": self._add_module_docstring,
             "MISSING_FUNCTION_DOCSTRING": self._add_function_docstring,
@@ -127,8 +210,7 @@ class PatchApplier:
         return content[:insert_pos] + docstring + content[insert_pos:]
 
     def _add_type_hints(self, content, issue):
-        # Placeholder — no change yet
-        return content
+        return content  # placeholder
 
     def _suggest_split(self, content, issue):
         func_name = issue["function"]
@@ -146,6 +228,17 @@ class PatchApplier:
             return None
         with open(filepath, "r", encoding="utf-8", errors="ignore") as f:
             original = f.read()
+
+        # If Groq provided a complete replacement, use it
+        if str(filepath) in self.groq_improvements:
+            new_content = self.groq_improvements[str(filepath)]
+            if new_content != original:
+                with open(filepath, "w", encoding="utf-8") as f:
+                    f.write(new_content)
+                return filepath
+            return None
+
+        # Otherwise, apply static transformations
         modified = original
         for issue in file_analysis["issues"]:
             issue_type = issue["type"]
@@ -157,9 +250,8 @@ class PatchApplier:
             f.write(modified)
         return filepath
 
-
 # ============================================================
-# GIT + CURL ENGINE
+# GIT + CURL ENGINE (unchanged)
 # ============================================================
 
 class GitCurlEngine:
@@ -179,31 +271,15 @@ class GitCurlEngine:
         if not self.token or not self.repo:
             raise Exception("GITHUB_TOKEN and GITHUB_REPO must be set.")
 
-        # 1. Set remote URL with token
         remote_url = f"https://{self.token}@github.com/{self.repo}.git"
         self._run(f"git remote set-url origin {remote_url}")
 
-        # 2. Fetch base branch
-        try:
-            self._run(f"git fetch origin {self.base}")
-        except:
-            print(f"⚠️  Could not fetch {self.base}, trying master...")
-            self.base = "master"
-            self._run(f"git fetch origin {self.base}")
-
-        # 3. Create / reset head branch
-        self._run(f"git checkout {self.base}")
-        self._run(f"git pull origin {self.base}")
-        self._run(f"git branch -D {self.head} 2>/dev/null || true")
         self._run(f"git push origin --delete {self.head} 2>/dev/null || true")
-        self._run(f"git checkout -b {self.head}")
-
-        # 4. Add and commit all changes
+        self._run(f"git checkout -B {self.head}")
         self._run("git add .")
         self._run(f'git commit -m "{title}"')
         self._run(f"git push -u origin {self.head}")
 
-        # 5. Create PR using curl
         payload = json.dumps({
             "title": title,
             "body": body,
@@ -227,7 +303,6 @@ class GitCurlEngine:
         else:
             raise Exception(f"API error: {resp.get('message', output)}")
 
-
 # ============================================================
 # MAIN
 # ============================================================
@@ -236,28 +311,28 @@ def main():
 """
 Auto-generated docstring for main.
 """
-"""
-Auto-generated docstring for main.
-"""
-"""
-Auto-generated docstring for main.
-"""
-"""
-Auto-generated docstring for main.
-"""
     print("🔍 Scanning codebase...")
     scanner = CodebaseScanner()
     analysis = scanner.analyze_all()
     print(f"   Found {analysis['total_files']} files, {analysis['total_issues']} issues.")
 
-    if analysis['total_issues'] == 0:
-        print("✅ No issues found — nothing to patch.")
-        return
+    groq_improvements = {}
 
-    applier = PatchApplier()
+    if GROQ_API_KEY:
+        print("🧠 Using Groq to analyze and improve code...")
+        improver = GroqImprover(GROQ_API_KEY)
+        groq_improvements = improver.generate_improvements(analysis)
+        if groq_improvements:
+            print(f"   Groq proposed improvements for {len(groq_improvements)} files.")
+        else:
+            print("   No Groq improvements generated.")
+    else:
+        print("ℹ️  GROQ_API_KEY not set. Using static analysis only.")
+
+    applier = PatchApplier(groq_improvements)
     patched_files = []
     for file_data in analysis["files"]:
-        if file_data["total_issues"] > 0:
+        if file_data["total_issues"] > 0 or str(Path(file_data["path"])) in groq_improvements:
             result = applier.apply(file_data)
             if result:
                 patched_files.append(result)
@@ -272,16 +347,17 @@ Auto-generated docstring for main.
         print("ℹ️  GITHUB_TOKEN or GITHUB_REPO not set. Changes are only local.")
         return
 
-    print("🚀 Pushing changes and creating pull request...")
+    print("🚀 Creating/resetting branch, committing, and opening PR...")
     title = f"Nova-X Auto Patch: {len(patched_files)} files improved"
     body = "Auto-generated by Nova-X Patch Engine.\n\nFiles changed:\n" + "\n".join(f"- {p}" for p in patched_files)
+    if groq_improvements:
+        body += "\n\n🤖 Groq reasoning was used to generate these improvements."
     engine = GitCurlEngine()
     try:
         url = engine.create_pr(title, body)
         print(f"🎉 Pull Request created: {url}")
     except Exception as e:
         print(f"❌ Failed to create PR: {e}")
-
 
 if __name__ == "__main__":
     main()

@@ -33,6 +33,9 @@ Auto-generated docstring for is_capability_question.
 """
 Auto-generated docstring for is_capability_question.
 """
+"""
+Auto-generated docstring for is_capability_question.
+"""
 
     text = text.lower()
 
@@ -40,6 +43,9 @@ Auto-generated docstring for is_capability_question.
 
 
 def capability_response():
+"""
+Auto-generated docstring for capability_response.
+"""
 """
 Auto-generated docstring for capability_response.
 """
