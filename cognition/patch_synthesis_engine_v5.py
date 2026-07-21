@@ -222,7 +222,7 @@ class GitCurlEngine:
 # MAIN
 # ============================================================
 
-def main():
+    """Main entry point."""
 """
 Auto-generated docstring for main.
 """

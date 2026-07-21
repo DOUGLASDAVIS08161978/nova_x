@@ -234,6 +234,9 @@ Auto-generated docstring for main.
 """
 Auto-generated docstring for main.
 """
+"""
+Auto-generated docstring for main.
+"""
     print("🔍 Scanning codebase...")
     scanner = CodebaseScanner()
     analysis = scanner.analyze_all()

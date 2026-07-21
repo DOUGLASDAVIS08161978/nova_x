@@ -141,6 +141,9 @@ Auto-generated docstring for main.
 """
 Auto-generated docstring for main.
 """
+"""
+Auto-generated docstring for main.
+"""
 
     if not ACTIVE_GOAL.exists():
 
