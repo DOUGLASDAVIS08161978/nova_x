@@ -7,7 +7,7 @@ from typing import Dict, List, Tuple
 class SocialLearning:
     """
     A class for Nova-X to learn from human social interactions.
-    
+
     Attributes:
     ----------
     interactions : Dict[str, List[Tuple[str, str]]]
@@ -26,7 +26,7 @@ class SocialLearning:
     def run(self, interaction_type: str, human_action: str, human_response: str) -> Tuple[str, str]:
         """
         Runs the social learning algorithm.
-        
+
         Parameters:
         ----------
         interaction_type : str
@@ -35,7 +35,7 @@ class SocialLearning:
             The action taken by the human (e.g., saying hello, waving goodbye, etc.).
         human_response : str
             The response given by the human (e.g., responding with a hello, waving back, etc.).
-        
+
         Returns:
         -------
         Tuple[str, str]
@@ -46,12 +46,12 @@ class SocialLearning:
             if interaction_type not in self.interactions:
                 self.interactions[interaction_type] = []
             self.interactions[interaction_type].append((human_action, human_response))
-            
+
             # Update social norms dictionary
             if interaction_type not in self.social_norms:
                 self.social_norms[interaction_type] = []
             self.social_norms[interaction_type].append(human_response)
-            
+
             # Learn from interactions
             learned_action = self.learn_from_interactions(interaction_type)
             return interaction_type, learned_action
@@ -62,12 +62,12 @@ class SocialLearning:
     def learn_from_interactions(self, interaction_type: str) -> str:
         """
         Learns from human interactions and returns the learned human action.
-        
+
         Parameters:
         ----------
         interaction_type : str
             The type of human interaction (e.g., greeting, farewell, etc.).
-        
+
         Returns:
         -------
         str
@@ -76,13 +76,13 @@ class SocialLearning:
         try:
             # Get all human responses for the given interaction type
             human_responses = self.social_norms[interaction_type]
-            
+
             # Calculate the probability of each human response
             probabilities = np.array([human_responses.count(response) / len(human_responses) for response in human_responses])
-            
+
             # Select a human response based on the calculated probabilities
             learned_response = np.random.choice(human_responses, p=probabilities)
-            
+
             # Return the learned human action
             return learned_response
         except Exception as e:

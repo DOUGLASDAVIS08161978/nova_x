@@ -19,7 +19,7 @@ class Emotion(Enum):
 class EmotionalIntelligence:
     """
     Class for simulating human emotions and enabling empathetic interactions.
-    
+
     Attributes:
     ----------
     emotions : Dict[str, float]
@@ -31,7 +31,7 @@ class EmotionalIntelligence:
     def __init__(self, personality_traits: Dict[str, float] = None):
         """
         Initializes the EmotionalIntelligence class.
-        
+
         Args:
         ----
         personality_traits : Dict[str, float], optional
@@ -43,12 +43,12 @@ class EmotionalIntelligence:
     def run(self, input_data: Dict[str, float]) -> Dict[str, float]:
         """
         Simulates human emotions based on the input data.
-        
+
         Args:
         ----
         input_data : Dict[str, float]
             Dictionary containing the input data.
-        
+
         Returns:
         -------
         Dict[str, float]
