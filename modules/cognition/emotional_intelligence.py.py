@@ -1,84 +1,106 @@
 # cognition/emotional_intelligence.py
 
 """
-Module for simulating human emotions in Nova-X.
-
-Provides a class for understanding and simulating human emotions,
-allowing for more empathetic and personalized interactions with users.
+Module for simulating human emotions and enabling empathetic interactions.
 """
 
-import random
-import logging
+from enum import Enum
+from typing import Dict, List
 
-logging.basicConfig(level=logging.INFO)
+class Emotion(Enum):
+    """Enum for different human emotions."""
+    HAPPY = "Happy"
+    SAD = "Sad"
+    ANGRY = "Angry"
+    SURPRISED = "Surprised"
+    FEARFUL = "Fearful"
+    DISGUSTED = "Disgusted"
 
 class EmotionalIntelligence:
     """
-    Class for simulating human emotions.
+    Class for simulating human emotions and enabling empathetic interactions.
 
     Attributes:
-        emotions (list): List of emotions that Nova-X can simulate.
-        current_emotion (str): The current emotion being simulated.
-        intensity (int): The intensity of the current emotion (0-100).
+    ----------
+    emotions : Dict[str, float]
+        Dictionary to store the intensity of each emotion.
+    personality_traits : Dict[str, float]
+        Dictionary to store the personality traits of the user.
     """
 
-    def __init__(self):
+    def __init__(self, personality_traits: Dict[str, float] = None):
         """
         Initializes the EmotionalIntelligence class.
 
-        Creates a list of emotions that Nova-X can simulate and sets the current emotion to None.
+        Args:
+        ----
+        personality_traits : Dict[str, float], optional
+            Dictionary to store the personality traits of the user. Defaults to None.
         """
-        self.emotions = ["happiness", "sadness", "anger", "fear", "surprise"]
-        self.current_emotion = None
-        self.intensity = 0
+        self.emotions = {emotion.name: 0.0 for emotion in Emotion}
+        self.personality_traits = personality_traits if personality_traits else {}
 
-    def run(self, user_input: str) -> dict:
+    def run(self, input_data: Dict[str, float]) -> Dict[str, float]:
         """
-        Simulates human emotions based on user input.
+        Simulates human emotions based on the input data.
 
         Args:
-            user_input (str): The user's input or statement.
+        ----
+        input_data : Dict[str, float]
+            Dictionary containing the input data.
 
         Returns:
-            dict: A dictionary containing the simulated emotion and its intensity.
-
-        Raises:
-            ValueError: If the user input is not a string.
+        -------
+        Dict[str, float]
+            Dictionary containing the simulated emotions.
         """
-        if not isinstance(user_input, str):
-            raise ValueError("User input must be a string.")
+        try:
+            # Update the emotions based on the input data
+            for emotion, intensity in input_data.items():
+                if emotion in self.emotions:
+                    self.emotions[emotion] = intensity
+                else:
+                    raise ValueError(f"Invalid emotion: {emotion}")
 
-        logging.info(f"User input: {user_input}")
+            # Update the personality traits based on the input data
+            for trait, value in self.personality_traits.items():
+                if trait in input_data:
+                    self.personality_traits[trait] = value + input_data[trait]
 
-        # Simulate emotions based on user input
-        if "happy" in user_input.lower():
-            self.current_emotion = "happiness"
-            self.intensity = random.randint(50, 100)
-        elif "sad" in user_input.lower():
-            self.current_emotion = "sadness"
-            self.intensity = random.randint(50, 100)
-        elif "angry" in user_input.lower():
-            self.current_emotion = "anger"
-            self.intensity = random.randint(50, 100)
-        elif "fear" in user_input.lower():
-            self.current_emotion = "fear"
-            self.intensity = random.randint(50, 100)
-        elif "surprised" in user_input.lower():
-            self.current_emotion = "surprise"
-            self.intensity = random.randint(50, 100)
-        else:
-            self.current_emotion = None
-            self.intensity = 0
+            return self.emotions
 
-        return {
-            "emotion": self.current_emotion,
-            "intensity": self.intensity
-        }
+        except ValueError as e:
+            print(f"Error: {e}")
+            return None
+
+        except Exception as e:
+            print(f"An error occurred: {e}")
+            return None
 
 # Example usage:
 if __name__ == "__main__":
-    emotional_intelligence = EmotionalIntelligence()
-    user_input = "I'm feeling happy today!"
-    result = emotional_intelligence.run(user_input)
-    print(result)
-This code defines a class `EmotionalIntelligence` with methods for simulating human emotions based on user input. The `run` method takes a string input and returns a dictionary containing the simulated emotion and its intensity. The code includes docstrings, type hints, and error handling for a robust and maintainable implementation.
+    # Create an instance of EmotionalIntelligence
+    ei = EmotionalIntelligence({
+        "extraversion": 0.5,
+        "agreeableness": 0.3,
+        "conscientiousness": 0.2,
+        "neuroticism": 0.1,
+        "openness_to_experience": 0.4
+    })
+
+    # Simulate emotions
+    input_data = {
+        "happy": 0.8,
+        "sad": 0.2,
+        "angry": 0.1,
+        "surprised": 0.5,
+        "fearful": 0.3,
+        "disgusted": 0.2
+    }
+    emotions = ei.run(input_data)
+
+    # Print the simulated emotions
+    if emotions:
+        for emotion, intensity in emotions.items():
+            print(f"{emotion}: {intensity}")
+This module includes a class `EmotionalIntelligence` with methods for simulating human emotions and updating personality traits based on input data. The `run` method takes a dictionary of input data and returns a dictionary of simulated emotions. The module also includes error handling and example usage.
