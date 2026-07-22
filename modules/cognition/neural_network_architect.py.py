@@ -23,11 +23,11 @@ class NeuralNetworkArchitect:
         loss_function (str): Loss function used for training the neural network.
     """
 
-    def __init__(self, 
-                 input_shape: Tuple[int, int], 
-                 output_shape: Tuple[int, int], 
-                 hidden_layers: List[Dict[str, int]], 
-                 optimizer: str = 'adam', 
+    def __init__(self,
+                 input_shape: Tuple[int, int],
+                 output_shape: Tuple[int, int],
+                 hidden_layers: List[Dict[str, int]],
+                 optimizer: str = 'adam',
                  loss_function: str = 'mean_squared_error'):
         """
         Initializes the NeuralNetworkArchitect class.
@@ -84,13 +84,13 @@ class NeuralNetworkArchitect:
 
         return model
 
-    def run(self, 
-            x_train: np.ndarray, 
-            y_train: np.ndarray, 
-            x_val: np.ndarray, 
-            y_val: np.ndarray, 
-            epochs: int = 10, 
-            batch_size: int = 32, 
+    def run(self,
+            x_train: np.ndarray,
+            y_train: np.ndarray,
+            x_val: np.ndarray,
+            y_val: np.ndarray,
+            epochs: int = 10,
+            batch_size: int = 32,
             patience: int = 5) -> Tuple[float, float]:
         """
         Trains the neural network model on the provided training data and evaluates its performance on the validation data.

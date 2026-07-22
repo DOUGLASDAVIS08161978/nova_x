@@ -13,7 +13,7 @@ import pandas as pd
 class ExplainabilityEngine(ABC):
     """
     A class that provides explainability for decision-making processes and actions.
-    
+
     Attributes:
     ----------
     model : object
@@ -103,7 +103,7 @@ class ExplainabilityEngine(ABC):
 class LocalInterpretabilityModel(ExplainabilityEngine):
     """
     A class that provides local interpretability for decision-making processes and actions.
-    
+
     Attributes:
     ----------
     model : object
@@ -149,7 +149,7 @@ class LocalInterpretabilityModel(ExplainabilityEngine):
 class ShapValuesModel(ExplainabilityEngine):
     """
     A class that provides SHAP values for decision-making processes and actions.
-    
+
     Attributes:
     ----------
     model : object
@@ -190,6 +190,6 @@ class ShapValuesModel(ExplainabilityEngine):
         # Note: This is a simplified implementation and actual implementation may vary based on the model and data
         shap_values = np.random.rand(len(data), len(self.feature_names))
         return {self.feature_names[i]: shap_values[i][0] for i in range(len(self.feature_names))}
-This code provides a basic structure for the ExplainabilityEngine class and its subclasses (LocalInterpretabilityModel and ShapValuesModel). The ExplainabilityEngine class serves as an abstract base class, providing methods for getting feature importances and top features. The LocalInterpretabilityModel class provides local interpretability for decision-making processes and actions, while the ShapValuesModel class provides SHAP values for decision-making processes and actions. 
+This code provides a basic structure for the ExplainabilityEngine class and its subclasses (LocalInterpretabilityModel and ShapValuesModel). The ExplainabilityEngine class serves as an abstract base class, providing methods for getting feature importances and top features. The LocalInterpretabilityModel class provides local interpretability for decision-making processes and actions, while the ShapValuesModel class provides SHAP values for decision-making processes and actions.
 
 Please note that this is a simplified implementation and actual implementation may vary based on the model and data. You may need to adjust the code to fit your specific use case.
