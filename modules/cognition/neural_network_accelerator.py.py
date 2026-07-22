@@ -24,7 +24,7 @@ class NeuralNetworkAccelerator:
         val_loader (DataLoader): The data loader for validation data.
     """
 
-    def __init__(self, model: nn.Module, optimizer: optim.Optimizer, loss_fn: nn.Module, 
+    def __init__(self, model: nn.Module, optimizer: optim.Optimizer, loss_fn: nn.Module,
                  train_dataset: Dataset, val_dataset: Dataset, batch_size: int, device: torch.device):
         """
         Initializes the NeuralNetworkAccelerator instance.
